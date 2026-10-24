@@ -23,6 +23,31 @@ https://www.additudemag.com/rejection-sensitive-dysphoria-and-adhd/
 - Common coping patterns are people-pleasing, avoidance, and perfectionism or overachieving.
 - Dodson reports that alpha agonists (guanfacine or clonidine) and MAOIs help some people. Any change like this needs to go through a clinician.
 
+### More from ADDitude (https://www.additudemag.com/)
+- **"How Does RSD Really, Actually Feel?"** (ADDitude editors, readers' experiences, May 2025). Readers describe RSD as physical: winded, the stomach dropping, nausea, a tight chest. A partner's silence can feel "like knives". Anger can flare into "white hot rage" quickly. Each rejection can feel "like the very first time" as a child.
+  https://www.additudemag.com/rsd-rejection-sensitive-dysphoria-experiences/
+- **"Stop Walking On (or Throwing Down) Eggshells in Your Relationship"** (Dr Sharon Saline, Feb 2026). Tools for couples:
+  - **QTIP**: Quit Taking It Personally.
+  - **Takeback of the Day**: either partner can withdraw one regretted remark.
+  - **Benefit of the doubt**: use "I wonder…" and "It hurt me when…".
+  - **STEPS**: Self-control, Time apart (with an agreed signal), Evenness, Practise reflective listening, Strategise.
+  - **Scripts for the partner**, for example "How should I say things so they're easier for you to hear?"
+  https://www.additudemag.com/hurt-feelings-shame-spiral-how-to-stop-being-defensive/
+- **"How to Deal with Rejection"** (Dr Sharon Saline). Coping strategies:
+  - Recall times you persevered.
+  - List your strengths as affirmations.
+  - Do a daily "happy and a crappy".
+  - Use **STAR**: Stop, Think, Act, Recover.
+  - Treat sensitivity as a strength, and practise self-compassion.
+  - Avoid suppressing feelings and avoiding situations, because both make RSD stronger.
+  https://www.additudemag.com/how-to-deal-with-rejection-rsd-adhd/
+- **"Emotional Spirals of RSD"** (Kate Funk, LMFT). Three steps: know your triggers, use compassionate self-talk, and use distraction or humour.
+  https://www.additudemag.com/emotional-spiral-rsd-strategies/
+- **Podcast 524, "RSD Meaning & Impact in Relationships"** (Dr Sharon Saline).
+  https://www.additudemag.com/webinar/rsd-meaning-impact-relationships-adhd/
+- **"Living with RSD: Alex Partridge on ADHD and Rejection"**.
+  https://www.additudemag.com/alex-partridge-rejection-sensitive-dysphoria/
+
 ### Simply Psychology: Rejection Sensitivity in ADHD Relationships
 https://www.simplypsychology.org/rejection-sensitive-dysphoria-relationships.html
 

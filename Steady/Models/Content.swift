@@ -42,7 +42,8 @@ enum Content {
                     "“I'm not upset with you. I just meant the bins need doing.”",
                     "“That came out wrong — what I meant was…”",
                     "“You're not in trouble. We're on the same team.”",
-                    "“Do you want to talk, or would a few minutes help?”"
+                    "“Do you want to talk, or would a few minutes help?”",
+                    "“I noticed you looked at me — was there anything behind that look?”"
                 ]
             )
         case .storm:
@@ -64,6 +65,7 @@ enum Content {
                     "Prioritise safety and calm over solving anything.",
                     "Fewer words. Short, warm, steady sentences.",
                     "Respect the pause word if it's used — and agree when to come back.",
+                    "Try QTIP — Quit Taking It Personally. The intensity is about the hurt, not about you.",
                     "Offer physical comfort only if it's wanted. Ask first.",
                     "Look after yourself too: you can step away if you're being spoken to unkindly."
                 ],
@@ -239,6 +241,67 @@ enum Content {
                              body: "Not every upset is RSD. Sometimes {J} is upset about something real, and that deserves to be heard on its own terms. Some ADHD voices talk about “rejection attunement” — being finely tuned to real signals too.")
             ],
             source: "ADDitude · ADHD Wise podcast"
+        ),
+        LearnTopic(
+            id: "feels",
+            title: "What it actually feels like",
+            symbol: "waveform.path.ecg",
+            summary: "Adults with ADHD describe RSD as physical — like being winded — and it often hits the body before the mind catches up.",
+            sections: [
+                LearnSection(heading: "Like a punch",
+                             body: "When ADDitude asked readers what RSD feels like, many described it physically: the air leaving their lungs, the heart dropping into the stomach, nausea, a tight chest or throat, then exhaustion afterwards."),
+                LearnSection(heading: "Silence can hurt most",
+                             body: "One reader described a partner's silence and blank expression as feeling “like knives”. If you go quiet because you're tired or thinking, saying so out loud can save {J} a lot of pain."),
+                LearnSection(heading: "Fast anger",
+                             body: "Others described frustration turning into “white hot rage” in seconds. It's the hurt coming out sideways — and it usually burns out just as fast."),
+                LearnSection(heading: "Being small again",
+                             body: "Some said every rejection feels like the very first one they had as a child. That's why a minor moment can bring a reaction that seems to belong to a much bigger event."),
+                LearnSection(heading: "Why this helps you",
+                             body: "Knowing it's this physical makes it easier not to take it personally. In the moment {J} may genuinely be in pain, not choosing to be difficult.")
+            ],
+            source: "ADDitude · “How Does RSD Really, Actually Feel?” (readers' experiences)"
+        ),
+        LearnTopic(
+            id: "couples",
+            title: "Tools for couples",
+            symbol: "person.2.wave.2",
+            summary: "Simple, practical tools from psychologist Dr Sharon Saline for couples living with RSD.",
+            sections: [
+                LearnSection(heading: "QTIP: Quit Taking It Personally",
+                             body: "Before reacting, ask: is this bad mood really about me? Very often it isn't. This works both ways — for {K} and for {J}."),
+                LearnSection(heading: "The Takeback of the Day",
+                             body: "Either of you can say: “I said something I regret. I'd like it to be my takeback.” The other takes a breath and lets it go, without holding on to resentment."),
+                LearnSection(heading: "Benefit of the doubt",
+                             body: "Assume good intent. Swap accusations for “I wonder…” or “It hurt me when…”."),
+                LearnSection(heading: "STEPS to cool down",
+                             body: "Self-control: notice early body signs — a faster heartbeat, a louder voice — and act early.\nTime apart: agree a break signal (your pause word) and how breaks work.\nEvenness: once calm, ask what upset you and what you'd do differently.\nPractise reflective listening (below).\nStrategise: small goals, like a monthly date night or a daily thank-you."),
+                LearnSection(heading: "Reflective listening",
+                             body: "Pick a talker and a listener. The talker speaks without interruption for a few minutes. The listener repeats back what they heard and asks, “Did I get that right?” Then swap."),
+                LearnSection(heading: "Questions to ask each other",
+                             body: "“How should I say things so they're easier for you to hear?”\n“How can I help you slow down when feelings get big?”\n“I noticed you looked at me — was there anything behind that look?”\nIf this feels too hard to start alone, an ADHD-informed couples therapist can help.")
+            ],
+            source: "ADDitude · Dr Sharon Saline, “Stop Walking On (or Throwing Down) Eggshells”"
+        ),
+        LearnTopic(
+            id: "spiral",
+            title: "Slowing the spiral",
+            symbol: "tornado",
+            summary: "Strategies for {J} to catch an RSD spiral early and come back from it faster.",
+            sections: [
+                LearnSection(heading: "Be a STAR",
+                             body: "Stop, Think, Act, Recover. A pause in a tense moment gives time to read the situation accurately instead of jumping to the worst conclusion."),
+                LearnSection(heading: "Know your triggers",
+                             body: "Think back to a recent time you felt bad about yourself: what happened, what you felt, and what story you told yourself. Spotting the pattern lets you step in earlier. (The Moments log in the Us tab helps with this.)"),
+                LearnSection(heading: "Talk to yourself like a friend",
+                             body: "A mistake doesn't make you a bad person. Notice the effort you made, what went well, and what you'd do differently next time. It feels awkward at first and calming with practice."),
+                LearnSection(heading: "Distraction and humour",
+                             body: "Break the shame loop with movement (a quick walk, jumping jacks), a small task, or something that makes you laugh. It's not dodging responsibility — it's getting out of a distorted story first."),
+                LearnSection(heading: "Build the evidence",
+                             body: "Write down times you kept going despite fear, and a list of your strengths — RSD makes these memories fade. A daily “happy and a crappy” (a few good and not-so-good things) keeps the balance honest."),
+                LearnSection(heading: "What doesn't work",
+                             body: "Pushing feelings down or avoiding every chance of criticism. Rejection is part of life, and avoidance tends to make RSD stronger over time.")
+            ],
+            source: "ADDitude · Dr Sharon Saline; Kate Funk, LMFT"
         )
     ]
 
@@ -351,6 +414,7 @@ enum Content {
         FeelingClue(id: "buzz", kind: .body, text: "Buzzing, restless", flavours: [.anxious, .anger]),
         FeelingClue(id: "tears", kind: .body, text: "Close to tears", flavours: [.shame]),
         FeelingClue(id: "jaw", kind: .body, text: "Clenched jaw or fists", flavours: [.anger]),
+        FeelingClue(id: "winded", kind: .body, text: "Winded, like a punch", flavours: [.shame, .anger]),
 
         FeelingClue(id: "ruin", kind: .thought, text: "“I've ruined everything”", flavours: [.shame]),
         FeelingClue(id: "angry", kind: .thought, text: "“They're angry with me”", flavours: [.anxious]),
@@ -360,6 +424,7 @@ enum Content {
         FeelingClue(id: "point", kind: .thought, text: "“What's the point?”", flavours: [.shutdown, .shame]),
         FeelingClue(id: "fix", kind: .thought, text: "“I have to fix this NOW”", flavours: [.anxious]),
         FeelingClue(id: "fog", kind: .thought, text: "Can't think straight", flavours: [.shutdown]),
+        FeelingClue(id: "child", kind: .thought, text: "Feeling small, like a kid again", flavours: [.shame]),
 
         FeelingClue(id: "hide", kind: .urge, text: "Hide or leave the room", flavours: [.shutdown, .shame]),
         FeelingClue(id: "snap", kind: .urge, text: "Snap or argue back", flavours: [.anger]),
@@ -404,6 +469,8 @@ enum Content {
              detail: "{J} owns how the feeling came out. You can own anything you'd do differently. Nobody needs to grovel."),
         Step(title: "Agree one small change",
              detail: "A pause word, a clearer text, a check-in. Small and specific beats a big promise."),
+        Step(title: "Use a takeback",
+             detail: "Either of you can say, “I said something I regret — I'd like it to be my takeback.” The other lets it go. (From Dr Sharon Saline.)"),
         Step(title: "Close the loop",
              detail: "“We're okay. We got through that.” Then do something nice together.")
     ]
@@ -413,6 +480,8 @@ enum Content {
              detail: "You can't cause or prevent RSD on your own. You can only influence how you both respond to it."),
         Step(title: "Boundaries are allowed",
              detail: "Being understanding doesn't mean accepting being shouted at. “I want to help, and I won't be spoken to like that. I'll be back in 20 minutes.”"),
+        Step(title: "QTIP: Quit Taking It Personally",
+             detail: "When {J}'s mood shifts suddenly, ask yourself whether it's really about you. With RSD it usually isn't."),
         Step(title: "Your feelings matter too",
              detail: "Living alongside RSD can be tiring and confusing. It's okay to feel frustrated, sad or hurt yourself."),
         Step(title: "Don't walk on eggshells",
@@ -450,8 +519,36 @@ enum Content {
                  by: "ThinkADHD",
                  detail: "A clear, kind UK overview: what RSD is, its impact on relationships and work, CBT and coping strategies.",
                  url: "https://thinkadhd.co.uk/adhd-and/adhd-and-rejection-sensitivity-dysphoria-rsd/"),
-        Resource(kind: .article, title: "How ADHD Ignites Rejection Sensitive Dysphoria",
-                 by: "ADDitude · Dr William Dodson",
+        Resource(kind: .additude, title: "ADDitude",
+                 by: "additudemag.com",
+                 detail: "A leading ADHD magazine with a large library on RSD, emotions and relationships, written with ADHD specialists.",
+                 url: "https://www.additudemag.com/"),
+        Resource(kind: .additude, title: "How Does RSD Really, Actually Feel?",
+                 by: "ADDitude readers",
+                 detail: "Adults with ADHD describe RSD in their own words — a great one for partners to read.",
+                 url: "https://www.additudemag.com/rsd-rejection-sensitive-dysphoria-experiences/"),
+        Resource(kind: .additude, title: "Stop Walking On (or Throwing Down) Eggshells",
+                 by: "Dr Sharon Saline",
+                 detail: "Tools for couples: QTIP, the Takeback of the Day, STEPS and reflective listening.",
+                 url: "https://www.additudemag.com/hurt-feelings-shame-spiral-how-to-stop-being-defensive/"),
+        Resource(kind: .additude, title: "How to Deal with Rejection",
+                 by: "Dr Sharon Saline",
+                 detail: "Coping strategies including STAR, recalling times you persevered, and self-compassion.",
+                 url: "https://www.additudemag.com/how-to-deal-with-rejection-rsd-adhd/"),
+        Resource(kind: .additude, title: "Emotional Spirals of RSD",
+                 by: "Kate Funk, LMFT",
+                 detail: "Three steps to slow negative feelings: know your triggers, compassionate self-talk, distraction and humour.",
+                 url: "https://www.additudemag.com/emotional-spiral-rsd-strategies/"),
+        Resource(kind: .additude, title: "RSD Meaning & Impact in Relationships",
+                 by: "ADDitude podcast 524 · Dr Sharon Saline",
+                 detail: "Managing conflict, repair and blame in relationships touched by RSD.",
+                 url: "https://www.additudemag.com/webinar/rsd-meaning-impact-relationships-adhd/"),
+        Resource(kind: .additude, title: "Living with RSD: Alex Partridge",
+                 by: "ADDitude",
+                 detail: "The ADHD Chatter host on his own experience of rejection sensitivity.",
+                 url: "https://www.additudemag.com/alex-partridge-rejection-sensitive-dysphoria/"),
+        Resource(kind: .additude, title: "How ADHD Ignites Rejection Sensitive Dysphoria",
+                 by: "Dr William Dodson",
                  detail: "The classic explainer: internalised vs externalised RSD, people-pleasing, avoidance and treatment options.",
                  url: "https://www.additudemag.com/rejection-sensitive-dysphoria-and-adhd/"),
         Resource(kind: .article, title: "Rejection Sensitivity in ADHD Relationships",

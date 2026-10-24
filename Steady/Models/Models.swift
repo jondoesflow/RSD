@@ -175,13 +175,15 @@ struct Resource: Identifiable, Hashable {
     enum Kind: String, CaseIterable {
         case podcast = "Podcasts"
         case book = "Books"
-        case article = "Articles"
+        case additude = "From ADDitude"
+        case article = "More articles"
         case support = "Support & crisis lines"
 
         var symbol: String {
             switch self {
             case .podcast: return "headphones"
             case .book: return "book.closed"
+            case .additude: return "newspaper"
             case .article: return "doc.text"
             case .support: return "lifepreserver"
             }
