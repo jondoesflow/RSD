@@ -19,16 +19,36 @@ The names are editable, so any couple can use it.
 ### The Feelings finder
 Jon often doesn't know what he's feeling until the feeling is already huge. The Feelings finder asks him to tap what he notices **in his body**, **in his head** and **what he wants to do**. It then suggests which flavour of RSD it might be (shame wave, anger flash, alarm bells or shutdown), says what might help, and writes a message he can send straight to Katie.
 
-## Getting it onto your iPhone
+## Getting it onto Katie's iPhone (TestFlight, no Mac needed)
 
-You'll need a Mac with **Xcode 16 or later**. A free Apple ID is enough to install on your own phone.
+`.github/workflows/testflight.yml` archives the app, signs it and uploads it to TestFlight from a GitHub-hosted Mac. It's the same workflow Upside and Grade use.
 
-1. Clone this repo and open `Steady.xcodeproj`.
-2. Select the **Steady** target, open **Signing & Capabilities**, and choose your Team (your Apple ID). If Xcode complains about the bundle identifier, change `com.jonrussell.steady` to something unique.
-3. Plug in Katie's iPhone, select it as the run destination, and press **Run** (⌘R).
-4. On the iPhone, go to **Settings → General → VPN & Device Management** and trust your developer certificate.
+**1. Register the app (one time)**
+- At [developer.apple.com → Identifiers](https://developer.apple.com/account/resources/identifiers/list), add an App ID with the bundle ID `com.jondoesflow.steady`.
+- In [App Store Connect → Apps](https://appstoreconnect.apple.com/apps), click **+ → New App**. Choose iOS, pick a name, select that bundle ID, and set the SKU to `steady`. App names must be unique across the whole App Store, so if "Steady" is taken use something like "Steady – RSD Toolkit". The name on the home screen stays "Steady".
 
-With a free Apple ID, the app has to be re-installed every 7 days. A paid Apple Developer account removes that limit and also lets you use TestFlight, so Katie can install updates without a cable.
+**2. Add the four repository secrets (one time)**
+In this repo, go to Settings → Secrets and variables → Actions. These are the same values as the other apps:
+`APPLE_TEAM_ID`, `ASC_KEY_ID`, `ASC_ISSUER_ID`, `ASC_KEY_P8`. The workflow file explains each one.
+
+**3. Upload a build**
+Go to Actions → **TestFlight** → **Run workflow**. Pushing to the `testflight` branch or pushing a tag named `testflight-*` also works. Apple usually takes 5–30 minutes to process the build. Each run gets a new build number.
+
+**4. Add Katie as a tester**
+- **Internal tester (fastest, no review):** in App Store Connect → Users and Access, invite Katie with the *Customer Support* or *Developer* role. Once she accepts, open the app's TestFlight tab → Internal Testing, click **+** to create a group, and add her.
+- **External tester (just her email):** TestFlight → External Testing, click **+** to create a group, then add her email. The first build needs a quick Beta App Review, which usually takes about a day.
+
+Katie installs the **TestFlight** app from the App Store and accepts the email invite. Updates then arrive automatically each time you run the workflow.
+
+### On a Mac instead
+
+```bash
+brew install xcodegen
+xcodegen generate
+open Steady.xcodeproj
+```
+
+Select your team under Signing & Capabilities and run it on a connected iPhone.
 
 Requires iOS 17 or later. Everything is stored on the device. There are no accounts and nothing is sent anywhere.
 
@@ -49,6 +69,8 @@ All the built-in wording lives in `Steady/Models/Content.swift`, so it's easy to
 ## Project layout
 
 ```
+project.yml               XcodeGen spec (iOS 17+, bundle ID com.jondoesflow.steady)
+.github/workflows/        build.yml (CI build), testflight.yml (upload to TestFlight)
 Steady/
   SteadyApp.swift         app entry and tabs
   Models/
