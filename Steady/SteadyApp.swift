@@ -2,7 +2,7 @@ import SwiftUI
 
 @main
 struct SteadyApp: App {
-    @State private var store = Store()
+    @State private var store = Store.forLaunch()
 
     var body: some Scene {
         WindowGroup {

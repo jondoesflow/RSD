@@ -49,6 +49,7 @@ private struct SituationCard: View {
                 .contentShape(Rectangle())
             }
             .buttonStyle(.plain)
+            .accessibilityIdentifier("situation-\(situation.id)")
 
             if isExpanded {
                 Row(label: "What you meant", symbol: "person.fill", tint: .blue, text: situation.youMeant)

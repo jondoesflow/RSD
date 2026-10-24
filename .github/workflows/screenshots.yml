@@ -1,0 +1,64 @@
+name: Screenshots
+
+# Runs the app in demo mode on the iPhone 6.9" and 6.3" simulators and captures the
+# App Store screenshots. Raw captures are pushed to the `app-store-screenshots` branch;
+# scripts/frame_screenshots.py adds the captions and backgrounds.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  capture:
+    runs-on: macos-26
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Select newest Xcode
+        run: |
+          sudo xcode-select -s "$(ls -d /Applications/Xcode_*.app | sort -V | tail -1)"
+          xcodebuild -version
+
+      - name: Generate Xcode project
+        run: |
+          brew install xcodegen
+          which xcbeautify || brew install xcbeautify
+          xcodegen generate
+
+      - name: Capture
+        run: |
+          set -o pipefail
+          mkdir -p shots
+          for size in max pro; do
+            xcrun simctl list devices available -j | python3 scripts/pick_simulator.py $size > build-sim.txt
+            UDID=$(head -1 build-sim.txt)
+            echo "Using $(sed -n 2p build-sim.txt) ($(sed -n 3p build-sim.txt))"
+            xcrun simctl boot "$UDID" || true
+            xcrun simctl bootstatus "$UDID" -b
+            xcrun simctl ui "$UDID" appearance light
+            xcrun simctl status_bar "$UDID" override --time "9:41" --dataNetwork wifi --wifiMode active --wifiBars 3 \
+              --cellularMode active --cellularBars 4 --batteryState charged --batteryLevel 100
+            rm -rf "build/$size.xcresult"
+            xcodebuild test \
+              -project Steady.xcodeproj \
+              -scheme Steady \
+              -destination "id=$UDID" \
+              -resultBundlePath "build/$size.xcresult" \
+              -parallel-testing-enabled NO \
+              | xcbeautify --renderer github-actions
+            mkdir -p "export/$size"
+            xcrun xcresulttool export attachments --path "build/$size.xcresult" --output-path "export/$size"
+            python3 scripts/collect_shots.py "$size"
+            xcrun simctl shutdown "$UDID" || true
+          done
+
+      - name: Publish to app-store-screenshots branch
+        run: |
+          cd shots
+          echo "${GITHUB_SHA}" > commit.txt
+          git init -q && git checkout -q -b app-store-screenshots && git add -A
+          git -c user.name="steady-ci" -c user.email="steady-ci@users.noreply.github.com" commit -qm "Raw App Store screenshots ${GITHUB_SHA}"
+          git push -f -q "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" app-store-screenshots

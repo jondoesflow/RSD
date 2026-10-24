@@ -44,12 +44,30 @@ targets:
           - UIInterfaceOrientationPortrait
         ITSAppUsesNonExemptEncryption: false
 
+  SteadyUITests:
+    type: bundle.ui-testing
+    platform: iOS
+    sources:
+      - path: SteadyUITests
+    dependencies:
+      - target: Steady
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.jondoesflow.steady.uitests
+        GENERATE_INFOPLIST_FILE: YES
+        TEST_TARGET_NAME: Steady
+
 schemes:
   Steady:
     build:
       targets:
         Steady: all
+        SteadyUITests: [test]
     run:
       config: Debug
+    test:
+      config: Debug
+      targets:
+        - SteadyUITests
     archive:
       config: Release

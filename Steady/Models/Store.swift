@@ -137,3 +137,27 @@ enum FeelingsFinder {
         return lines.joined(separator: "\n")
     }
 }
+
+// MARK: - Demo mode (App Store screenshots)
+
+extension Store {
+    /// Launch with `-demo` for a clean, sample-filled store with neutral names,
+    /// kept apart from the real data. Used by the screenshot UI tests.
+    static func forLaunch(arguments: [String] = ProcessInfo.processInfo.arguments) -> Store {
+        guard arguments.contains("-demo") else { return Store() }
+        let suite = "steady.demo"
+        let defaults = UserDefaults(suiteName: suite) ?? .standard
+        defaults.removePersistentDomain(forName: suite)
+        let store = Store(defaults: defaults)
+        store.profile.names = Names(me: "Alex", partner: "Sam")
+        store.profile.pauseWord = "Pineapple"
+        store.hasOnboarded = true
+        let day: TimeInterval = 86_400
+        store.moments = [
+            Moment(date: Date().addingTimeInterval(-1 * day), phase: .wobble, trigger: "Short text reply", feltLike: "Alarm bells", helped: "A quick “we're okay”"),
+            Moment(date: Date().addingTimeInterval(-4 * day), phase: .storm, trigger: "Feedback at work", feltLike: "Shame wave", helped: "Pause word, then a walk"),
+            Moment(date: Date().addingTimeInterval(-9 * day), phase: .wobble, trigger: "Short text reply", feltLike: "Replaying it", helped: "Asked directly")
+        ]
+        return store
+    }
+}

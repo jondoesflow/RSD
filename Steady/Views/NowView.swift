@@ -18,6 +18,7 @@ struct NowView: View {
                             PhaseButton(phase: phase)
                         }
                         .buttonStyle(.plain)
+                        .accessibilityIdentifier("phase-\(phase.rawValue)")
                     }
 
                     pauseWordCard
@@ -40,6 +41,7 @@ struct NowView: View {
                         }
                     }
                     .buttonStyle(.plain)
+                    .accessibilityIdentifier("feelings-finder")
 
                     checkIns
                 }
