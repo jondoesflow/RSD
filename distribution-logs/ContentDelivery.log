@@ -1,0 +1,2700 @@
+2026-10-24 13:30:05.359 DEBUG: [ContentDelivery.Uploader.CA546DA80] 
+--- Xcode ---
+ContentDelivery version 26.40.1 (174001) (API 1)
+Macintosh; macOS 26.6.2 25G83 (arm64)
+Free disk space: 96.341GB
+2026-10-24 13:30:05.360 DEBUG: [ContentDelivery.Uploader.CA546DA80] Created log file at path '/private/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/Steady_2026-10-24_13-30-03.722.xcdistributionlogs/ContentDelivery.log'.
+2026-10-24 13:30:05.361 DEBUG: [ContentDelivery.Uploader.CA546DA80] Show Progress: Contacting Apple Services…
+2026-10-24 13:30:05.366 DEBUG: [CDASCAPI.CA546DA80] 
+=======================================
+APP STORE CONNECT API list-builds REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/builds?filter[app]=6826537925&filter[version]=3&filter[preReleaseVersion.platform]=IOS&include=preReleaseVersion,appStoreVersion,betaAppReviewSubmission,buildBetaDetail
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+    "x-tx-correlation-key" = "26B74FEB-EB6B-4150-9A21-B8EA77659568-0";
+    "x-tx-request-id" = "20261024-133005-0";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:05.717 DEBUG: [CDASCAPI.CA5678580] Download task 1 did write 379 bytes.
+2026-10-24 13:30:05.718 DEBUG: [CDASCAPI.CA5678580] Download task 1 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_rlXHJU.tmp
+2026-10-24 13:30:05.718 DEBUG: [CDASCAPI.CA546DA80] Auth wants us to retry the response.
+2026-10-24 13:30:05.720 DEBUG: [CDASCAPI.CA546DA80] 
+=======================================
+APP STORE CONNECT API list-builds RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/builds?filter[app]=6826537925&filter[version]=3&filter[preReleaseVersion.platform]=IOS&include=preReleaseVersion,appStoreVersion,betaAppReviewSubmission,buildBetaDetail
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:06 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "33 ms";
+    b3 = "ea892c0596b5af85d646544cee27bf98-9c00d92665e205cd";
+    "x-apple-jingle-correlation-key" = 5KESYBMWWWXYLVSGKRGO4J57TA;
+    "x-b3-parentspanid" = 3081d44614238fc6;
+    "x-b3-spanid" = 9c00d92665e205cd;
+    "x-b3-traceid" = fd57165d58a75bcc;
+    "x-daiquiri-debug-worker-pid" = "47673, 25765";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3598;";
+    "x-request-id" = 5KESYBMWWWXYLVSGKRGO4J57TA;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-tgg8p:ac-gateway-api-main-7b4845dfd9-tgg8p:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : [ ],
+  "included" : [ ],
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/builds?filter%5Bversion%5D=3&filter%5BpreReleaseVersion.platform%5D=IOS&filter%5Bapp%5D=6826537925&include=preReleaseVersion%2CbetaAppReviewSubmission%2CappStoreVersion%2CbuildBetaDetail"
+  },
+  "meta" : {
+    "paging" : {
+      "total" : 0,
+      "limit" : 50
+    }
+  }
+}
+=======================================
+2026-10-24 13:30:05.726 DEBUG: [CDASCAPI.CA546DA80] 
+=======================================
+APP STORE CONNECT API list-buildUploads REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/apps/6826537925/buildUploads?filter[cfBundleShortVersionString]=1.0&filter[cfBundleVersion]=3&filter[platform]=IOS
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+    "x-tx-correlation-key" = "AC3629D3-33AB-4AB5-92D9-DE8F035F88B6-0";
+    "x-tx-request-id" = "20261024-133005-0";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:06.037 DEBUG: [CDASCAPI.CA5678580] Download task 1 did write 299 bytes.
+2026-10-24 13:30:06.038 DEBUG: [CDASCAPI.CA5678580] Download task 1 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_hG2OpM.tmp
+2026-10-24 13:30:06.039 DEBUG: [CDASCAPI.CA546DA80] Auth wants us to retry the response.
+2026-10-24 13:30:06.039 DEBUG: [CDASCAPI.CA546DA80] 
+=======================================
+APP STORE CONNECT API list-buildUploads RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/apps/6826537925/buildUploads?filter[cfBundleShortVersionString]=1.0&filter[cfBundleVersion]=3&filter[platform]=IOS
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:06 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "45 ms";
+    b3 = "54facfee5044bd96e23b456554e45784-74e3717cc5a171df";
+    "x-apple-jingle-correlation-key" = KT5M73SQIS6ZNYR3IVSVJZCXQQ;
+    "x-b3-parentspanid" = 83c4d4404484db96;
+    "x-b3-spanid" = 74e3717cc5a171df;
+    "x-b3-traceid" = bcf306ab001f23d2;
+    "x-daiquiri-debug-worker-pid" = "44281, 25763";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3597;";
+    "x-request-id" = KT5M73SQIS6ZNYR3IVSVJZCXQQ;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-922qs:ac-gateway-api-main-7b4845dfd9-922qs:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : [ ],
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/apps/6826537925/buildUploads?filter%5Bplatform%5D=IOS&filter%5BcfBundleVersion%5D=3&filter%5BcfBundleShortVersionString%5D=1.0"
+  },
+  "meta" : {
+    "paging" : {
+      "total" : 0,
+      "limit" : 50
+    }
+  }
+}
+=======================================
+2026-10-24 13:30:06.042 DEBUG: [ContentDelivery.Uploader.CA546DA80] 
+=======================================
+CREATE BUILD (ASSET_UPLOAD) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploads
+     timeout: 900 seconds
+      method: POST
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Length" = 188;
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: {"data":{"attributes":{"cfBundleShortVersionString":"1.0","cfBundleVersion":"3","platform":"IOS"},"relationships":{"app":{"data":{"id":"6826537925","type":"apps"}}},"type":"buildUploads"}}
+========================================
+2026-10-24 13:30:06.044 DEBUG: [ContentDelivery.Uploader.CA546D840] *** Launching: /usr/bin/log stream --predicate process contains "Xcode" and subsystem == "com.apple.network" --debug --info --style compact
+2026-10-24 13:30:06.044 DEBUG: [ContentDelivery.Uploader.CA546D840] Executing: /usr/bin/log stream --predicate process contains "Xcode" and subsystem == "com.apple.network" --debug --info --style compact
+2026-10-24 13:30:06.211 DEBUG: [ContentDelivery.Uploader.CA546E480] Download task 1 sent 188 bytes (188 of 188 bytes sent).
+2026-10-24 13:30:06.406 DEBUG: [ContentDelivery.Uploader.CA5678D40] Download task 1 did write 1611 bytes.
+2026-10-24 13:30:06.406 DEBUG: [ContentDelivery.Uploader.CA5678D40] Download task 1 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_XMZ3fK.tmp
+2026-10-24 13:30:06.406 DEBUG: [ContentDelivery.Uploader.CA546DA80] Auth wants us to retry the response.
+2026-10-24 13:30:06.407 DEBUG: [ContentDelivery.Uploader.CA546DA80] 
+=======================================
+CREATE BUILD (ASSET_UPLOAD) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploads
+ status code: 201 (created)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:06 GMT";
+    Location = "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "75 ms";
+    b3 = "9d60fdc2866067ec3b81775588822a55-03b3552a408e6721";
+    "x-apple-jingle-correlation-key" = TVQP3QUGMBT6YO4BO5KYRARKKU;
+    "x-b3-parentspanid" = 05111eeb7edb03b2;
+    "x-b3-spanid" = 03b3552a408e6721;
+    "x-b3-traceid" = 0022e114e8f9d249;
+    "x-daiquiri-debug-worker-pid" = "44307, 25787";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3596;";
+    "x-request-id" = TVQP3QUGMBT6YO4BO5KYRARKKU;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-4sqnd:ac-gateway-api-main-7b4845dfd9-4sqnd:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploads",
+    "id" : "c6cea91a-0166-4cca-a3ac-55422203944f",
+    "attributes" : {
+      "cfBundleShortVersionString" : "1.0",
+      "cfBundleVersion" : "3",
+      "createdDate" : "2026-10-24T06:30:06.729-07:00",
+      "state" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "infos" : [ ],
+        "state" : "AWAITING_UPLOAD"
+      },
+      "platform" : "IOS",
+      "uploadedDate" : null
+    },
+    "relationships" : {
+      "buildUploadFiles" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/relationships/buildUploadFiles",
+          "related" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadFiles"
+        }
+      },
+      "buildUploadBundles" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/relationships/buildUploadBundles",
+          "related" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadBundles"
+        }
+      },
+      "deliveryNotifications" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/relationships/deliveryNotifications"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads"
+  }
+}
+=======================================
+2026-10-24 13:30:06.407 DEBUG: [ContentDelivery.Uploader.CA546DA80] Received buildUploads ID: c6cea91a-0166-4cca-a3ac-55422203944f
+2026-10-24 13:30:17.142 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+--- Xcode ---
+ContentDelivery version 26.40.1 (174001) (API 1)
+Macintosh; macOS 26.6.2 25G83 (arm64)
+Free disk space: 96.337GB
+2026-10-24 13:30:17.143 DEBUG: [ContentDelivery.Uploader.CA5678B80] Created log file at path '/private/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/Steady_2026-10-24_13-30-03.722.xcdistributionlogs/ContentDelivery.log'.
+2026-10-24 13:30:17.143 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Contacting Apple Services…
+2026-10-24 13:30:17.144 DEBUG: [CDASCAPI.CA5678B80] 
+=======================================
+APP STORE CONNECT API list-builds REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/builds?filter[app]=6826537925&filter[version]=3&filter[preReleaseVersion.platform]=IOS&include=preReleaseVersion,appStoreVersion,betaAppReviewSubmission,buildBetaDetail
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+    "x-tx-correlation-key" = "DEE7102C-BF72-43B5-8752-C23EB88C4345-0";
+    "x-tx-request-id" = "20261024-133017-0";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:17.378 DEBUG: [CDASCAPI.CA5678D40] Download task 1 did write 379 bytes.
+2026-10-24 13:30:17.378 DEBUG: [CDASCAPI.CA5678D40] Download task 1 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_Q0faSA.tmp
+2026-10-24 13:30:17.379 DEBUG: [CDASCAPI.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:17.380 DEBUG: [CDASCAPI.CA5678B80] 
+=======================================
+APP STORE CONNECT API list-builds RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/builds?filter[app]=6826537925&filter[version]=3&filter[preReleaseVersion.platform]=IOS&include=preReleaseVersion,appStoreVersion,betaAppReviewSubmission,buildBetaDetail
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:17 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "27 ms";
+    b3 = "e4c2d74ac8947eeba135d9708fa58856-20bab0dad8952365";
+    "x-apple-jingle-correlation-key" = 4TBNOSWISR7OXIJV3FYI7JMIKY;
+    "x-b3-parentspanid" = c9d6d8b2ffcaa393;
+    "x-b3-spanid" = 20bab0dad8952365;
+    "x-b3-traceid" = 2fa90742159c44bf;
+    "x-daiquiri-debug-worker-pid" = "47674, 25760";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3595;";
+    "x-request-id" = 4TBNOSWISR7OXIJV3FYI7JMIKY;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-pwpxs:ac-gateway-api-main-7b4845dfd9-pwpxs:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : [ ],
+  "included" : [ ],
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/builds?filter%5Bapp%5D=6826537925&filter%5Bversion%5D=3&filter%5BpreReleaseVersion.platform%5D=IOS&include=preReleaseVersion%2CbetaAppReviewSubmission%2CappStoreVersion%2CbuildBetaDetail"
+  },
+  "meta" : {
+    "paging" : {
+      "total" : 0,
+      "limit" : 50
+    }
+  }
+}
+=======================================
+2026-10-24 13:30:17.388 DEBUG: [CDASCAPI.CA5678B80] 
+=======================================
+APP STORE CONNECT API list-buildUploads REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/apps/6826537925/buildUploads?filter[cfBundleShortVersionString]=1.0&filter[cfBundleVersion]=3&filter[platform]=IOS
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+    "x-tx-correlation-key" = "E97EEB9B-AFBD-46C1-8F4F-B04990CB91DC-0";
+    "x-tx-request-id" = "20261024-133017-0";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:17.646 DEBUG: [CDASCAPI.CA5678580] Download task 1 did write 1804 bytes.
+2026-10-24 13:30:17.647 DEBUG: [CDASCAPI.CA5678580] Download task 1 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_bRze6O.tmp
+2026-10-24 13:30:17.648 DEBUG: [CDASCAPI.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:17.649 DEBUG: [CDASCAPI.CA5678B80] 
+=======================================
+APP STORE CONNECT API list-buildUploads RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/apps/6826537925/buildUploads?filter[cfBundleShortVersionString]=1.0&filter[cfBundleVersion]=3&filter[platform]=IOS
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:17 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "43 ms";
+    b3 = "f287d598c813c6d049a61d5bfbd1a874-0a495651c6d8a968";
+    "x-apple-jingle-correlation-key" = 6KD5LGGICPDNASNGDVN7XUNIOQ;
+    "x-b3-parentspanid" = 02e2b023e4852967;
+    "x-b3-spanid" = 0a495651c6d8a968;
+    "x-b3-traceid" = aaaa6c6d6163c0e1;
+    "x-daiquiri-debug-worker-pid" = "44308, 25769";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3594;";
+    "x-request-id" = 6KD5LGGICPDNASNGDVN7XUNIOQ;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-tznz4:ac-gateway-api-main-7b4845dfd9-tznz4:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : [ {
+    "type" : "buildUploads",
+    "id" : "c6cea91a-0166-4cca-a3ac-55422203944f",
+    "attributes" : {
+      "cfBundleShortVersionString" : "1.0",
+      "cfBundleVersion" : "3",
+      "createdDate" : "2026-10-24T06:30:06-07:00",
+      "state" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "infos" : [ ],
+        "state" : "AWAITING_UPLOAD"
+      },
+      "platform" : "IOS",
+      "uploadedDate" : null
+    },
+    "relationships" : {
+      "buildUploadFiles" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/relationships/buildUploadFiles",
+          "related" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadFiles"
+        }
+      },
+      "buildUploadBundles" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/relationships/buildUploadBundles",
+          "related" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadBundles"
+        }
+      },
+      "deliveryNotifications" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/relationships/deliveryNotifications"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f"
+    }
+  } ],
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/apps/6826537925/buildUploads?filter%5BcfBundleVersion%5D=3&filter%5Bplatform%5D=IOS&filter%5BcfBundleShortVersionString%5D=1.0"
+  },
+  "meta" : {
+    "paging" : {
+      "total" : 1,
+      "limit" : 50
+    }
+  }
+}
+=======================================
+2026-10-24 13:30:17.650 DEBUG: [ContentDelivery.Uploader.CA5678B80] buildUpload 'c6cea91a-0166-4cca-a3ac-55422203944f' is in state AWAITING_UPLOAD; looking for buildUploadFiles.
+2026-10-24 13:30:17.653 DEBUG: [CDASCAPI.CA5678B80] 
+=======================================
+APP STORE CONNECT API REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadFiles
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+    "x-tx-correlation-key" = "E97EEB9B-AFBD-46C1-8F4F-B04990CB91DC-1";
+    "x-tx-request-id" = "20261024-133017-1";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:17.769 DEBUG: [CDASCAPI.CA5678580] Download task 2 did write 239 bytes.
+2026-10-24 13:30:17.769 DEBUG: [CDASCAPI.CA5678580] Download task 2 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_1aS1yr.tmp
+2026-10-24 13:30:17.770 DEBUG: [CDASCAPI.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:17.770 DEBUG: [CDASCAPI.CA5678B80] 
+=======================================
+APP STORE CONNECT API RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadFiles
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:18 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "24 ms";
+    b3 = "779b21ad259f42bf8d4bd3e0429f0e51-690993ab8a4de799";
+    "x-apple-jingle-correlation-key" = O6NSDLJFT5BL7DKL2PQEFHYOKE;
+    "x-b3-parentspanid" = 3523cdf894cf8529;
+    "x-b3-spanid" = 690993ab8a4de799;
+    "x-b3-traceid" = 75ffd742426201bf;
+    "x-daiquiri-debug-worker-pid" = "47657, 25769";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3593;";
+    "x-request-id" = O6NSDLJFT5BL7DKL2PQEFHYOKE;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-922qs:ac-gateway-api-main-7b4845dfd9-922qs:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : [ ],
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadFiles"
+  },
+  "meta" : {
+    "paging" : {
+      "total" : 0,
+      "limit" : 50
+    }
+  }
+}
+=======================================
+2026-10-24 13:30:17.978 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+--- Xcode ---
+ContentDelivery version 26.40.1 (174001) (API 1)
+Macintosh; macOS 26.6.2 25G83 (arm64)
+Free disk space: 96.337GB
+2026-10-24 13:30:17.978 DEBUG: [ContentDelivery.Uploader.CA5678B80] Created log file at path '/private/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/Steady_2026-10-24_13-30-03.722.xcdistributionlogs/ContentDelivery.log'.
+2026-10-24 13:30:17.979 DEBUG: [ContentDelivery.Uploader.CA5678B80] Running state machine...
+2026-10-24 13:30:17.979 DEBUG: [ContentDelivery.Uploader.CA5678B80] Running state 'CDUploaderStateBegin'...
+2026-10-24 13:30:17.980 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Making copy of ‘Steady.ipa’…
+2026-10-24 13:30:17.980 DEBUG: [ContentDelivery.Uploader.CA5678B80] Copied '/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/XcodeDistPipeline.~~~Ct7JnG/Packages/Steady.ipa' to '~/Library/Caches/com.apple.cds/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9/Steady.ipa'.
+2026-10-24 13:30:17.981 DEBUG: [ContentDelivery.Uploader.CA5678B80] Uploading file: Steady.ipa
+           File size: 642537
+            Apple ID: 6826537925
+Short version string: 1.0
+      Version string: 3
+            Platform: iOS App
+2026-10-24 13:30:17.981 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Preparing to upload ‘Steady.ipa’…
+2026-10-24 13:30:17.981 DEBUG: [ContentDelivery.Uploader.CA5678B80] Running state 'CDUploaderStateComputeAssetChecksum'...
+2026-10-24 13:30:17.985 DEBUG: [ContentDelivery.Uploader.CA5678B80] Estimated part size: 5242880
+Part checksums:(
+    5FC3420C332B68DB85D587C1502FBB6C
+)
+2026-10-24 13:30:17.985 DEBUG: [ContentDelivery.Uploader.CA5678B80] Running state 'CDUploaderStateRequestCreateContainer'...
+2026-10-24 13:30:17.986 DEBUG: [CDASCAPI.CA5678B80] 
+=======================================
+APP STORE CONNECT API build-uploads REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+    "x-tx-correlation-key" = "106C64B2-F4F4-4AF1-A212-AABC30724537-0";
+    "x-tx-request-id" = "20261024-133017-0";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:18.234 DEBUG: [CDASCAPI.CA5678580] Download task 1 did write 1644 bytes.
+2026-10-24 13:30:18.234 DEBUG: [CDASCAPI.CA5678580] Download task 1 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_kdSJOD.tmp
+2026-10-24 13:30:18.235 DEBUG: [CDASCAPI.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:18.236 DEBUG: [CDASCAPI.CA5678B80] 
+=======================================
+APP STORE CONNECT API build-uploads RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:18 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "38 ms";
+    b3 = "8ab61c8a17962d9c8597c312a03e1be0-6e813c684a1990ce";
+    "x-apple-jingle-correlation-key" = RK3BZCQXSYWZZBMXYMJKAPQ34A;
+    "x-b3-parentspanid" = fc74a07c3797d1d7;
+    "x-b3-spanid" = 6e813c684a1990ce;
+    "x-b3-traceid" = c3c62d0c8f9245e1;
+    "x-daiquiri-debug-worker-pid" = "47687, 25784";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3592;";
+    "x-request-id" = RK3BZCQXSYWZZBMXYMJKAPQ34A;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-4sqnd:ac-gateway-api-main-7b4845dfd9-4sqnd:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploads",
+    "id" : "c6cea91a-0166-4cca-a3ac-55422203944f",
+    "attributes" : {
+      "cfBundleShortVersionString" : "1.0",
+      "cfBundleVersion" : "3",
+      "createdDate" : "2026-10-24T06:30:06-07:00",
+      "state" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "infos" : [ ],
+        "state" : "AWAITING_UPLOAD"
+      },
+      "platform" : "IOS",
+      "uploadedDate" : null
+    },
+    "relationships" : {
+      "buildUploadFiles" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/relationships/buildUploadFiles",
+          "related" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadFiles"
+        }
+      },
+      "buildUploadBundles" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/relationships/buildUploadBundles",
+          "related" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadBundles"
+        }
+      },
+      "deliveryNotifications" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/relationships/deliveryNotifications"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f"
+  }
+}
+=======================================
+2026-10-24 13:30:18.238 DEBUG: [ContentDelivery.Uploader.CA5678B80] buildUpload 'c6cea91a-0166-4cca-a3ac-55422203944f' is in state AWAITING_UPLOAD; looking for buildUploadFiles.
+2026-10-24 13:30:18.242 DEBUG: [CDASCAPI.CA5678B80] 
+=======================================
+APP STORE CONNECT API REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadFiles
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+    "x-tx-correlation-key" = "106C64B2-F4F4-4AF1-A212-AABC30724537-1";
+    "x-tx-request-id" = "20261024-133018-1";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:18.340 DEBUG: [CDASCAPI.CA567A480] Download task 2 did write 239 bytes.
+2026-10-24 13:30:18.341 DEBUG: [CDASCAPI.CA567A480] Download task 2 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_IQojND.tmp
+2026-10-24 13:30:18.342 DEBUG: [CDASCAPI.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:18.343 DEBUG: [CDASCAPI.CA5678B80] 
+=======================================
+APP STORE CONNECT API RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadFiles
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:18 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "26 ms";
+    b3 = "69b7dcf2c17523b419e8e95e149dc8a9-95bc89b093f7dd69";
+    "x-apple-jingle-correlation-key" = NG35Z4WBOUR3IGPI5FPBJHOIVE;
+    "x-b3-parentspanid" = c3a3bc8f27f053ed;
+    "x-b3-spanid" = 95bc89b093f7dd69;
+    "x-b3-traceid" = 2ac76336730f5ed9;
+    "x-daiquiri-debug-worker-pid" = "40052, 25784";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3591;";
+    "x-request-id" = NG35Z4WBOUR3IGPI5FPBJHOIVE;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-j5w52:ac-gateway-api-main-7b4845dfd9-j5w52:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : [ ],
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadFiles"
+  },
+  "meta" : {
+    "paging" : {
+      "total" : 0,
+      "limit" : 50
+    }
+  }
+}
+=======================================
+2026-10-24 13:30:18.344 DEBUG: [ContentDelivery.Uploader.CA5678B80] Running state 'CDUploaderStateUploadAssetDescription'...
+2026-10-24 13:30:18.347 DEBUG: [ContentDelivery.Uploader.CA5678B80] No asset describer was set; using default describer.
+2026-10-24 13:30:18.349 DEBUG: [ContentDelivery.Uploader.CA5678B80] myBundlePath: /Applications/Xcode_26.6.app/Contents/SharedFrameworks/ContentDelivery.framework
+2026-10-24 13:30:18.362 DEBUG: [ContentDelivery.Uploader.CA5678B80] Searching for swinfo at: /Applications/Xcode_26.6.app/Contents/SharedFrameworks/ContentDelivery.framework/Resources/swinfo
+2026-10-24 13:30:18.363 DEBUG: [ContentDelivery.Uploader.CA5678B80] Calling swinfo at '/Applications/Xcode_26.6.app/Contents/SharedFrameworks/ContentDelivery.framework/Resources/swinfo'.
+2026-10-24 13:30:18.365 DEBUG: [ContentDelivery.Uploader.CA5678B80] Executing: /Applications/Xcode_26.6.app/Contents/SharedFrameworks/ContentDelivery.framework/Resources/swinfo -f /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/XcodeDistPipeline.~~~Ct7JnG/Packages/Steady.ipa --extra-args /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/swinfo-extra-args-2250B6BC-5760-4047-929B-51CAE4F40298.plist --platform ios -o /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml --plistFormat binary --output-spi
+2026-10-24 13:30:34.436 DEBUG: [ContentDelivery.Uploader.CA5678B80] Task ‘CDTask’ did terminate in ‘CDSwinfoCommandExecutor’ with exit code 0.
+2026-10-24 13:30:34.437 DEBUG: [ContentDelivery.Uploader.CA5678B80] Finished: '/Applications/Xcode_26.6.app/Contents/SharedFrameworks/ContentDelivery.framework/Resources/swinfo -f /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/XcodeDistPipeline.~~~Ct7JnG/Packages/Steady.ipa --extra-args /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/swinfo-extra-args-2250B6BC-5760-4047-929B-51CAE4F40298.plist --platform ios -o /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml --plistFormat binary --output-spi' with status 0
+2026-10-24 13:30:34.437 DEBUG: [ContentDelivery.Uploader.CA5678B80] *** /Applications/Xcode_26.6.app/Contents/SharedFrameworks/ContentDelivery.framework/Resources/swinfo
+stdout: spi-output-file: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip
+
+2026-10-24 13:30:34.438 DEBUG: [ContentDelivery.Uploader.CA5678B80] dealloc CDAbstractToolExecutor (CDSwinfoCommandExecutor), cdTask=/Applications/Xcode_26.6.app/Contents/SharedFrameworks/ContentDelivery.framework/Resources/swinfo -f /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/XcodeDistPipeline.~~~Ct7JnG/Packages/Steady.ipa --extra-args /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/swinfo-extra-args-2250B6BC-5760-4047-929B-51CAE4F40298.plist --platform ios -o /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml --plistFormat binary --output-spi
+2026-10-24 13:30:34.438 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Analyzing package…
+2026-10-24 13:30:34.438 DEBUG: [ContentDelivery.Uploader.CA5678B80] Asset description file: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml
+2026-10-24 13:30:34.438 DEBUG: [ContentDelivery.Uploader.CA5678B80] SPI file: /var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip
+2026-10-24 13:30:34.444 DEBUG: [ContentDelivery.Uploader.CA5678B80] Creating container for asset description.
+2026-10-24 13:30:34.444 DEBUG: [ContentDelivery.Uploader.CA5678B80] Getting upload instructions for asset description.
+2026-10-24 13:30:34.447 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+RETRIEVE UPLOAD OPERATIONS (UPLOADING ASSET DESCRIPTION) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles
+     timeout: 900 seconds
+      method: POST
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Length" = 322;
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: {"data":{"attributes":{"assetType":"ASSET_DESCRIPTION","fileName":"asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml","fileSize":1126967,"uti":"com.apple.binary-property-list"},"relationships":{"buildUpload":{"data":{"id":"c6cea91a-0166-4cca-a3ac-55422203944f","type":"buildUploads"}}},"type":"buildUploadFiles"}}
+========================================
+2026-10-24 13:30:34.447 DEBUG: [ContentDelivery.Uploader.CA5678D40] *** Launching: /usr/bin/log stream --predicate process contains "Xcode" and subsystem == "com.apple.network" --debug --info --style compact
+2026-10-24 13:30:34.447 DEBUG: [ContentDelivery.Uploader.CA5678D40] Executing: /usr/bin/log stream --predicate process contains "Xcode" and subsystem == "com.apple.network" --debug --info --style compact
+2026-10-24 13:30:34.606 DEBUG: [ContentDelivery.Uploader.CA567A940] Download task 1 sent 322 bytes (322 of 322 bytes sent).
+2026-10-24 13:30:34.957 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 1 did write 1864 bytes.
+2026-10-24 13:30:34.957 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 1 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_SPKTNm.tmp
+2026-10-24 13:30:34.957 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:34.958 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+RETRIEVE UPLOAD OPERATIONS (UPLOADING ASSET DESCRIPTION) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles
+ status code: 201 (created)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:35 GMT";
+    Location = "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "255 ms";
+    b3 = "34dab1eef026f28dee19075dff330279-00b9303213c6e9d1";
+    "x-apple-jingle-correlation-key" = GTNLD3XQE3ZI33QZA5O76MYCPE;
+    "x-b3-parentspanid" = 4fbd62d68eb07c35;
+    "x-b3-spanid" = 00b9303213c6e9d1;
+    "x-b3-traceid" = 3b7a773ea071aac0;
+    "x-daiquiri-debug-worker-pid" = "40065, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3590;";
+    "x-request-id" = GTNLD3XQE3ZI33QZA5O76MYCPE;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-dqxlq:ac-gateway-api-main-7b4845dfd9-dqxlq:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "ddfe25ca-70d4-4960-ac37-a3f5ffc528e2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "AWAITING_UPLOAD"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/26e93776-2023-467f-bac1-e7b1d400f843",
+      "assetType" : "ASSET_DESCRIPTION",
+      "fileName" : "asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml",
+      "fileSize" : 1126967,
+      "sourceFileChecksums" : {
+        "file" : null,
+        "composite" : null
+      },
+      "uploadOperations" : [ {
+        "method" : "PUT",
+        "url" : "https://northamerica-1.object-storage.apple.com/itms-assets-prod-200001/PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/WWqO0JXVDx7KU4fKymc80bfaI1kF9kZrGV0zVAl5OC0_U003d-1792848635079?partNumber=1&uploadId=17cfb230-cfaf-11f1-ac9e-6cfe54bb5501&apple-asset-repo-correlation-key=GTNLD3XQE3ZI33QZA5O76MYCPE&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261024T133035Z&X-Amz-SignedHeaders=host&X-Amz-Credential=PKIAI0ZGNAD8WKMSOOX0%2F20261024%2Fnorthamerica-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=02c01b0b435bf532adbaedb080bfc1e0beec724d51b487cb5d7afd394f95498f",
+        "length" : 1126967,
+        "offset" : 0,
+        "requestHeaders" : [ {
+          "name" : "Content-Type",
+          "value" : "application/octet-stream"
+        } ],
+        "expiration" : "2026-10-31T06:30:35.267-07:00",
+        "partNumber" : 1,
+        "entityTag" : null
+      } ],
+      "uti" : "com.apple.binary-property-list"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles"
+  }
+}
+=======================================
+2026-10-24 13:30:34.959 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+UPDATE buildUploadFiles CHECKSUM REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+     timeout: 900 seconds
+      method: PATCH
+ httpHeaders: {
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Length" = 272;
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: {"data":{"attributes":{"sourceFileChecksums":{"composite":{"algorithm":"MD5","hash":"7FD953EB3E117FBAE65176472B64EDF4-1-1126967"},"file":{"algorithm":"MD5","hash":"D8E06889FF6D98B67CF85117DA600235"}}},"id":"ddfe25ca-70d4-4960-ac37-a3f5ffc528e2","type":"buildUploadFiles"}}
+========================================
+2026-10-24 13:30:34.962 DEBUG: [ContentDelivery.Uploader.CA567A940] Download task 2 sent 272 bytes (272 of 272 bytes sent).
+2026-10-24 13:30:35.408 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 2 did write 2095 bytes.
+2026-10-24 13:30:35.409 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 2 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_OYArAG.tmp
+2026-10-24 13:30:35.409 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:35.409 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+UPDATE buildUploadFiles CHECKSUM RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:35 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "354 ms";
+    b3 = "6aacede99a38b242c7d5f8f199f53609-f2cdafd10d701fa7";
+    "x-apple-jingle-correlation-key" = NKWO32M2HCZEFR6V7DYZT5JWBE;
+    "x-b3-parentspanid" = 48cfe88ce5bb7d48;
+    "x-b3-spanid" = f2cdafd10d701fa7;
+    "x-b3-traceid" = 7c8aa018384cf845;
+    "x-daiquiri-debug-worker-pid" = "44286, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3589;";
+    "x-request-id" = NKWO32M2HCZEFR6V7DYZT5JWBE;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-5dpds:ac-gateway-api-main-7b4845dfd9-5dpds:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "ddfe25ca-70d4-4960-ac37-a3f5ffc528e2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "AWAITING_UPLOAD"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/26e93776-2023-467f-bac1-e7b1d400f843",
+      "assetType" : "ASSET_DESCRIPTION",
+      "fileName" : "asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml",
+      "fileSize" : 1126967,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "D8E06889FF6D98B67CF85117DA600235",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "7FD953EB3E117FBAE65176472B64EDF4-1-1126967",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : [ {
+        "method" : "PUT",
+        "url" : "https://northamerica-1.object-storage.apple.com/itms-assets-prod-200001/PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/WWqO0JXVDx7KU4fKymc80bfaI1kF9kZrGV0zVAl5OC0_U003d-1792848635079?partNumber=1&uploadId=17cfb230-cfaf-11f1-ac9e-6cfe54bb5501&apple-asset-repo-correlation-key=GTNLD3XQE3ZI33QZA5O76MYCPE&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261024T133035Z&X-Amz-SignedHeaders=host&X-Amz-Credential=PKIAI0ZGNAD8WKMSOOX0%2F20261024%2Fnorthamerica-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=02c01b0b435bf532adbaedb080bfc1e0beec724d51b487cb5d7afd394f95498f",
+        "length" : 1126967,
+        "offset" : 0,
+        "requestHeaders" : [ {
+          "name" : "Content-Type",
+          "value" : "application/octet-stream"
+        } ],
+        "expiration" : "2026-10-31T06:30:35.267-07:00",
+        "partNumber" : 1,
+        "entityTag" : null
+      } ],
+      "uti" : "com.apple.binary-property-list"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+  }
+}
+=======================================
+2026-10-24 13:30:35.410 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Sending analysis to App Store Connect…
+2026-10-24 13:30:35.410 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+UPLOADING ASSET DESCRIPTION
+=======================================
+2026-10-24 13:30:35.411 DEBUG: [ContentDelivery.Uploader.CA5678B80] Created the temporary directory '/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/com.apple.cds.vbtx/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:30:35.414 DEBUG: [ContentDelivery.Uploader.CA5678B80] Part 1 still needs to be uploaded (1126967 bytes).
+2026-10-24 13:30:35.414 DEBUG: [ContentDelivery.Uploader.CA5678B80] Part 1 will expire on 2026-10-31T13:30:35.267000+00:00.
+2026-10-24 13:30:35.417 DEBUG: [ContentDelivery.Uploader.CA5678B80] Wrote part 1 to temp file '/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/com.apple.cds.vbtx/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9/Part-1.tmp'.
+2026-10-24 13:30:35.418 DEBUG: [ContentDelivery.Uploader.CA5678B80] Adding upload task for part 1.
+2026-10-24 13:30:35.418 DEBUG: [ContentDelivery.Uploader.CA5678B80] Waiting for 1 upload task to finish.
+2026-10-24 13:30:35.682 DEBUG: [ContentDelivery.Uploader.CA546DA80] PROGRESS - PART 1 (1126967) - 'asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml' 100.00% (1126967/1126967)
+2026-10-24 13:30:36.234 DEBUG: [ContentDelivery.Uploader.CA567AF80] COMPLETED - PART 1 - asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml - eTag: "D8E06889FF6D98B67CF85117DA600235"
+2026-10-24 13:30:36.235 DEBUG: [ContentDelivery.Uploader.CA567AF80] Removed temporary part file '/private/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/com.apple.cds.vbtx/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9/Part-1.tmp'.
+2026-10-24 13:30:36.235 DEBUG: [ContentDelivery.Uploader.CA567AF80] Saving uploader state (CDUploaderStateUploadAssetDescription) for identifier 'com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:30:36.236 DEBUG: [ContentDelivery.Uploader.CA567AF80] Wrote state to '~/Library/Application Support/com.apple.dt.Xcode.ITunesSoftwareService/CDUploads/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9.plist'.
+2026-10-24 13:30:36.237 DEBUG: [ContentDelivery.Uploader.CA567AF80] All parts have been uploaded.
+2026-10-24 13:30:36.237 DEBUG: [ContentDelivery.Uploader.CA5678B80] Time to transfer: 0.264 seconds
+2026-10-24 13:30:36.237 DEBUG: [ContentDelivery.Uploader.CA5678B80] Removed temporary directory '/private/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/com.apple.cds.vbtx/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:30:36.238 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_DESCRIPTION) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:37.372 DEBUG: [ContentDelivery.Uploader.CA567AF80] Download task 4 did write 2125 bytes.
+2026-10-24 13:30:37.374 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 4 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_2zgp1G.tmp
+2026-10-24 13:30:37.374 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:37.374 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_DESCRIPTION) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:37 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "964 ms";
+    b3 = "563db55ed3e3f9467d9f1d0db49fd009-3c7f4f02353093b1";
+    "x-apple-jingle-correlation-key" = KY63KXWT4P4UM7M7DUG3JH6QBE;
+    "x-b3-parentspanid" = 3ed220ebb2d59e9e;
+    "x-b3-spanid" = 3c7f4f02353093b1;
+    "x-b3-traceid" = c8ad610775f93d96;
+    "x-daiquiri-debug-worker-pid" = "40065, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3588;";
+    "x-request-id" = KY63KXWT4P4UM7M7DUG3JH6QBE;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-qfcrf:ac-gateway-api-main-7b4845dfd9-qfcrf:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "ddfe25ca-70d4-4960-ac37-a3f5ffc528e2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "AWAITING_UPLOAD"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/26e93776-2023-467f-bac1-e7b1d400f843",
+      "assetType" : "ASSET_DESCRIPTION",
+      "fileName" : "asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml",
+      "fileSize" : 1126967,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "D8E06889FF6D98B67CF85117DA600235",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "7FD953EB3E117FBAE65176472B64EDF4-1-1126967",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : [ {
+        "method" : "PUT",
+        "url" : "https://northamerica-1.object-storage.apple.com/itms-assets-prod-200001/PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/WWqO0JXVDx7KU4fKymc80bfaI1kF9kZrGV0zVAl5OC0_U003d-1792848635079?partNumber=1&uploadId=17cfb230-cfaf-11f1-ac9e-6cfe54bb5501&apple-asset-repo-correlation-key=GTNLD3XQE3ZI33QZA5O76MYCPE&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261024T133035Z&X-Amz-SignedHeaders=host&X-Amz-Credential=PKIAI0ZGNAD8WKMSOOX0%2F20261024%2Fnorthamerica-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=02c01b0b435bf532adbaedb080bfc1e0beec724d51b487cb5d7afd394f95498f",
+        "length" : 1126967,
+        "offset" : 0,
+        "requestHeaders" : [ {
+          "name" : "Content-Type",
+          "value" : "application/octet-stream"
+        } ],
+        "expiration" : "2026-10-31T06:30:35.267-07:00",
+        "partNumber" : 1,
+        "entityTag" : "D8E06889FF6D98B67CF85117DA600235"
+      } ],
+      "uti" : "com.apple.binary-property-list"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+  }
+}
+=======================================
+2026-10-24 13:30:37.375 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Waiting for App Store Connect analysis response…
+2026-10-24 13:30:37.375 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+CHANGE UPLOAD STATE TO COMPLETE (UPLOADING ASSET DESCRIPTION)
+=======================================
+2026-10-24 13:30:37.377 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+CHANGE UPLOAD STATE TO COMPLETE (UPLOADING ASSET DESCRIPTION) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+     timeout: 900 seconds
+      method: PATCH
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Length" = 111;
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: {"data":{"attributes":{"uploaded":true},"id":"ddfe25ca-70d4-4960-ac37-a3f5ffc528e2","type":"buildUploadFiles"}}
+========================================
+2026-10-24 13:30:37.378 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 5 sent 111 bytes (111 of 111 bytes sent).
+2026-10-24 13:30:39.087 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 5 did write 1162 bytes.
+2026-10-24 13:30:39.088 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 5 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_uVd3ll.tmp
+2026-10-24 13:30:39.088 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:39.088 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+CHANGE UPLOAD STATE TO COMPLETE (UPLOADING ASSET DESCRIPTION) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:39 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "1641 ms";
+    b3 = "1e24abe72da99eaac0ffe5eb34cff43f-6464990d1a07a0a8";
+    "x-apple-jingle-correlation-key" = DYSKXZZNVGPKVQH74XVTJT7UH4;
+    "x-b3-parentspanid" = 79e9147567207718;
+    "x-b3-spanid" = 6464990d1a07a0a8;
+    "x-b3-traceid" = 4ebf84a761d74528;
+    "x-daiquiri-debug-worker-pid" = "40065, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3587;";
+    "x-request-id" = DYSKXZZNVGPKVQH74XVTJT7UH4;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-qfcrf:ac-gateway-api-main-7b4845dfd9-qfcrf:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "ddfe25ca-70d4-4960-ac37-a3f5ffc528e2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "UPLOAD_COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/26e93776-2023-467f-bac1-e7b1d400f843",
+      "assetType" : "ASSET_DESCRIPTION",
+      "fileName" : "asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml",
+      "fileSize" : 1126967,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "D8E06889FF6D98B67CF85117DA600235",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "7FD953EB3E117FBAE65176472B64EDF4-1-1126967",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.apple.binary-property-list"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+  }
+}
+=======================================
+2026-10-24 13:30:39.089 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+========================================
+Set ASSET_DESCRIPTION status to UPLOAD_COMPLETE
+========================================
+2026-10-24 13:30:39.090 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_DESCRIPTION) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:39.182 DEBUG: [ContentDelivery.Uploader.CA5678580] Download task 6 did write 1162 bytes.
+2026-10-24 13:30:39.183 DEBUG: [ContentDelivery.Uploader.CA5678580] Download task 6 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_MPOVzv.tmp
+2026-10-24 13:30:39.183 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:39.184 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_DESCRIPTION) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:39 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "24 ms";
+    b3 = "0d83f20d003f451b87783345b79e0783-e646fe4b9f6a0a57";
+    "x-apple-jingle-correlation-key" = BWB7EDIAH5CRXB3YGNC3PHQHQM;
+    "x-b3-parentspanid" = 5b39257e106796b8;
+    "x-b3-spanid" = e646fe4b9f6a0a57;
+    "x-b3-traceid" = 678147088a0b199a;
+    "x-daiquiri-debug-worker-pid" = "44286, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3586;";
+    "x-request-id" = BWB7EDIAH5CRXB3YGNC3PHQHQM;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-sf7fr:ac-gateway-api-main-7b4845dfd9-sf7fr:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "ddfe25ca-70d4-4960-ac37-a3f5ffc528e2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "UPLOAD_COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/26e93776-2023-467f-bac1-e7b1d400f843",
+      "assetType" : "ASSET_DESCRIPTION",
+      "fileName" : "asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml",
+      "fileSize" : 1126967,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "D8E06889FF6D98B67CF85117DA600235",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "7FD953EB3E117FBAE65176472B64EDF4-1-1126967",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.apple.binary-property-list"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+  }
+}
+=======================================
+2026-10-24 13:30:39.184 DEBUG: [ContentDelivery.Uploader.CA5678B80] Waiting for 'ASSET_DESCRIPTION' to complete.
+2026-10-24 13:30:39.184 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Waiting for App Store Connect analysis response…
+2026-10-24 13:30:39.185 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_DESCRIPTION) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:39.286 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 7 did write 1162 bytes.
+2026-10-24 13:30:39.287 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 7 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_bHAidu.tmp
+2026-10-24 13:30:39.287 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:39.288 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_DESCRIPTION) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:39 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "21 ms";
+    b3 = "458cdf8a82761f45542e83fc0f769116-d0072b3459e7f192";
+    "x-apple-jingle-correlation-key" = IWGN7CUCOYPUKVBOQP6A65URCY;
+    "x-b3-parentspanid" = c603f3525bbc397f;
+    "x-b3-spanid" = d0072b3459e7f192;
+    "x-b3-traceid" = 4f2b18b5094ea7f4;
+    "x-daiquiri-debug-worker-pid" = "40065, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3585;";
+    "x-request-id" = IWGN7CUCOYPUKVBOQP6A65URCY;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-bg9qt:ac-gateway-api-main-7b4845dfd9-bg9qt:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "ddfe25ca-70d4-4960-ac37-a3f5ffc528e2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "UPLOAD_COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/26e93776-2023-467f-bac1-e7b1d400f843",
+      "assetType" : "ASSET_DESCRIPTION",
+      "fileName" : "asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml",
+      "fileSize" : 1126967,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "D8E06889FF6D98B67CF85117DA600235",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "7FD953EB3E117FBAE65176472B64EDF4-1-1126967",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.apple.binary-property-list"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+  }
+}
+=======================================
+2026-10-24 13:30:39.288 DEBUG: [ContentDelivery.Uploader.CA5678B80] Upload state is 'UPLOAD_COMPLETE' (200).
+2026-10-24 13:30:39.288 DEBUG: [ContentDelivery.Uploader.CA5678B80] Will check again in 5 seconds.
+2026-10-24 13:30:44.298 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_DESCRIPTION) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:44.391 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 8 did write 1162 bytes.
+2026-10-24 13:30:44.391 DEBUG: [ContentDelivery.Uploader.CA5678580] Download task 8 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_MVVP5r.tmp
+2026-10-24 13:30:44.392 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:44.392 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_DESCRIPTION) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:44 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "22 ms";
+    b3 = "26601e0710a2b0d831a4a481ca14219a-f1cf56a8af55ba96";
+    "x-apple-jingle-correlation-key" = EZQB4BYQUKYNQMNEUSA4UFBBTI;
+    "x-b3-parentspanid" = 98fdc74dd64fb8cc;
+    "x-b3-spanid" = f1cf56a8af55ba96;
+    "x-b3-traceid" = 6e6e267ad62e2ac1;
+    "x-daiquiri-debug-worker-pid" = "44307, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3584;";
+    "x-request-id" = EZQB4BYQUKYNQMNEUSA4UFBBTI;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-mpgzv:ac-gateway-api-main-7b4845dfd9-mpgzv:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "ddfe25ca-70d4-4960-ac37-a3f5ffc528e2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "UPLOAD_COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/26e93776-2023-467f-bac1-e7b1d400f843",
+      "assetType" : "ASSET_DESCRIPTION",
+      "fileName" : "asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml",
+      "fileSize" : 1126967,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "D8E06889FF6D98B67CF85117DA600235",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "7FD953EB3E117FBAE65176472B64EDF4-1-1126967",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.apple.binary-property-list"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+  }
+}
+=======================================
+2026-10-24 13:30:44.393 DEBUG: [ContentDelivery.Uploader.CA5678B80] Upload state is 'UPLOAD_COMPLETE' (200).
+2026-10-24 13:30:44.393 DEBUG: [ContentDelivery.Uploader.CA5678B80] Will check again in 5 seconds.
+2026-10-24 13:30:49.463 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_DESCRIPTION) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:49.553 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 9 did write 1162 bytes.
+2026-10-24 13:30:49.553 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 9 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_ZqkXib.tmp
+2026-10-24 13:30:49.554 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:49.555 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_DESCRIPTION) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:49 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "18 ms";
+    b3 = "cafa8e14e055d727ae1c8ed4b97c4f6a-ac4b24d4ba261885";
+    "x-apple-jingle-correlation-key" = ZL5I4FHAKXLSPLQ4R3KLS7CPNI;
+    "x-b3-parentspanid" = 30c34f7a2ba4e008;
+    "x-b3-spanid" = ac4b24d4ba261885;
+    "x-b3-traceid" = 465ddf4cbabec24d;
+    "x-daiquiri-debug-worker-pid" = "47676, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3583;";
+    "x-request-id" = ZL5I4FHAKXLSPLQ4R3KLS7CPNI;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-ng4cz:ac-gateway-api-main-7b4845dfd9-ng4cz:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "ddfe25ca-70d4-4960-ac37-a3f5ffc528e2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "UPLOAD_COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/26e93776-2023-467f-bac1-e7b1d400f843",
+      "assetType" : "ASSET_DESCRIPTION",
+      "fileName" : "asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml",
+      "fileSize" : 1126967,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "D8E06889FF6D98B67CF85117DA600235",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "7FD953EB3E117FBAE65176472B64EDF4-1-1126967",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.apple.binary-property-list"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+  }
+}
+=======================================
+2026-10-24 13:30:49.557 DEBUG: [ContentDelivery.Uploader.CA5678B80] Upload state is 'UPLOAD_COMPLETE' (200).
+2026-10-24 13:30:49.557 DEBUG: [ContentDelivery.Uploader.CA5678B80] Will check again in 5 seconds.
+2026-10-24 13:30:54.616 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_DESCRIPTION) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:54.724 DEBUG: [ContentDelivery.Uploader.CA567AF80] Download task 10 did write 1155 bytes.
+2026-10-24 13:30:54.725 DEBUG: [ContentDelivery.Uploader.CA567AF80] Download task 10 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_MoPFnf.tmp
+2026-10-24 13:30:54.726 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:54.728 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_DESCRIPTION) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:55 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "21 ms";
+    b3 = "686c78a6abc6605327cdf5fbf342678c-02d4170a8788db7d";
+    "x-apple-jingle-correlation-key" = NBWHRJVLYZQFGJ6N6X57GQTHRQ;
+    "x-b3-parentspanid" = c994e303588c16f8;
+    "x-b3-spanid" = 02d4170a8788db7d;
+    "x-b3-traceid" = e9c3bab1b45f2787;
+    "x-daiquiri-debug-worker-pid" = "47672, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3582;";
+    "x-request-id" = NBWHRJVLYZQFGJ6N6X57GQTHRQ;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-5dpds:ac-gateway-api-main-7b4845dfd9-5dpds:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "ddfe25ca-70d4-4960-ac37-a3f5ffc528e2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/26e93776-2023-467f-bac1-e7b1d400f843",
+      "assetType" : "ASSET_DESCRIPTION",
+      "fileName" : "asset-description-556C5F5C-6040-4736-9B13-EB3AFE6F4EE1.xml",
+      "fileSize" : 1126967,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "D8E06889FF6D98B67CF85117DA600235",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "7FD953EB3E117FBAE65176472B64EDF4-1-1126967",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.apple.binary-property-list"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/ddfe25ca-70d4-4960-ac37-a3f5ffc528e2"
+  }
+}
+=======================================
+2026-10-24 13:30:54.730 DEBUG: [ContentDelivery.Uploader.CA5678B80] Upload state is 'COMPLETE' (200).
+2026-10-24 13:30:54.738 DEBUG: [ContentDelivery.Uploader.CA5678B80] Saving uploader state (CDUploaderStateUploadAssetDescription) for identifier 'com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:30:54.743 DEBUG: [ContentDelivery.Uploader.CA5678B80] Wrote state to '~/Library/Application Support/com.apple.dt.Xcode.ITunesSoftwareService/CDUploads/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9.plist'.
+2026-10-24 13:30:54.748 DEBUG: [ContentDelivery.Uploader.CA5678B80] Creating container for SPI analysis.
+2026-10-24 13:30:54.748 DEBUG: [ContentDelivery.Uploader.CA5678B80] Getting upload instructions for SPI analysis.
+2026-10-24 13:30:54.752 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+RETRIEVE UPLOAD OPERATIONS (UPLOADING SPI ANALYSIS) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles
+     timeout: 900 seconds
+      method: POST
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Length" = 316;
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: {"data":{"attributes":{"assetType":"ASSET_SPI","fileName":"DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip","fileSize":293655,"uti":"com.pkware.zip-archive"},"relationships":{"buildUpload":{"data":{"id":"c6cea91a-0166-4cca-a3ac-55422203944f","type":"buildUploads"}}},"type":"buildUploadFiles"}}
+========================================
+2026-10-24 13:30:54.757 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 11 sent 316 bytes (316 of 316 bytes sent).
+2026-10-24 13:30:55.106 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 11 did write 1857 bytes.
+2026-10-24 13:30:55.109 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 11 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_lZrYAV.tmp
+2026-10-24 13:30:55.110 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:55.112 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+RETRIEVE UPLOAD OPERATIONS (UPLOADING SPI ANALYSIS) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles
+ status code: 201 (created)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:55 GMT";
+    Location = "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "281 ms";
+    b3 = "a4d3397ffb50c4d6161a6d2c1b52f6e4-ee9c33ba71ea070f";
+    "x-apple-jingle-correlation-key" = UTJTS773KDCNMFQ2NUWBWUXW4Q;
+    "x-b3-parentspanid" = d3cc901710ddbdc7;
+    "x-b3-spanid" = ee9c33ba71ea070f;
+    "x-b3-traceid" = c69a498fe71d2dff;
+    "x-daiquiri-debug-worker-pid" = "47669, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3581;";
+    "x-request-id" = UTJTS773KDCNMFQ2NUWBWUXW4Q;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-2pvs9:ac-gateway-api-main-7b4845dfd9-2pvs9:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "6a4ab50b-0586-4316-be30-72555cababb2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "AWAITING_UPLOAD"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/2a31fd1b-419a-4b1c-92a7-cff6015d8161",
+      "assetType" : "ASSET_SPI",
+      "fileName" : "DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip",
+      "fileSize" : 293655,
+      "sourceFileChecksums" : {
+        "file" : null,
+        "composite" : null
+      },
+      "uploadOperations" : [ {
+        "method" : "PUT",
+        "url" : "https://northamerica-1.object-storage.apple.com/itms-assets-prod-200001/PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/wQpg4AUeVOIu3DjHE60O5LHv8LecugJ-jgt2qJstJEo_U003d-1792848655232?partNumber=1&uploadId=23d2ccc0-cfaf-11f1-85aa-42961895bbb5&apple-asset-repo-correlation-key=UTJTS773KDCNMFQ2NUWBWUXW4Q&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261024T133055Z&X-Amz-SignedHeaders=host&X-Amz-Credential=PKIAI0ZGNAD8WKMSOOX0%2F20261024%2Fnorthamerica-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=c65b0b23f8fb8aa4d2f5cb5cc591b35ec9eabbef9f106af7148f9721bf5e3062",
+        "length" : 293655,
+        "offset" : 0,
+        "requestHeaders" : [ {
+          "name" : "Content-Type",
+          "value" : "application/octet-stream"
+        } ],
+        "expiration" : "2026-10-31T06:30:55.418-07:00",
+        "partNumber" : 1,
+        "entityTag" : null
+      } ],
+      "uti" : "com.pkware.zip-archive"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles"
+  }
+}
+=======================================
+2026-10-24 13:30:55.115 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+UPDATE buildUploadFiles CHECKSUM REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+     timeout: 900 seconds
+      method: PATCH
+ httpHeaders: {
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Length" = 271;
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: {"data":{"attributes":{"sourceFileChecksums":{"composite":{"algorithm":"MD5","hash":"69B795B22E18EB487DD2B449B8B884A2-1-293655"},"file":{"algorithm":"MD5","hash":"A32F5FEA6206EB36689B29D7BEA25A3E"}}},"id":"6a4ab50b-0586-4316-be30-72555cababb2","type":"buildUploadFiles"}}
+========================================
+2026-10-24 13:30:55.120 DEBUG: [ContentDelivery.Uploader.CA5678580] Download task 12 sent 271 bytes (271 of 271 bytes sent).
+2026-10-24 13:30:55.604 DEBUG: [ContentDelivery.Uploader.CA5678580] Download task 12 did write 2087 bytes.
+2026-10-24 13:30:55.604 DEBUG: [ContentDelivery.Uploader.CA5678580] Download task 12 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_G9bNqD.tmp
+2026-10-24 13:30:55.605 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:55.606 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+UPDATE buildUploadFiles CHECKSUM RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:55 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "389 ms";
+    b3 = "1418f565150752a033d0a996078c89c3-8066148f70acb37a";
+    "x-apple-jingle-correlation-key" = CQMPKZIVA5JKAM6QVGLAPDEJYM;
+    "x-b3-parentspanid" = c3f57d1d983c63d8;
+    "x-b3-spanid" = 8066148f70acb37a;
+    "x-b3-traceid" = c794ba42083290fa;
+    "x-daiquiri-debug-worker-pid" = "47669, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3580;";
+    "x-request-id" = CQMPKZIVA5JKAM6QVGLAPDEJYM;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-79rcl:ac-gateway-api-main-7b4845dfd9-79rcl:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "6a4ab50b-0586-4316-be30-72555cababb2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "AWAITING_UPLOAD"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/2a31fd1b-419a-4b1c-92a7-cff6015d8161",
+      "assetType" : "ASSET_SPI",
+      "fileName" : "DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip",
+      "fileSize" : 293655,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "A32F5FEA6206EB36689B29D7BEA25A3E",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "69B795B22E18EB487DD2B449B8B884A2-1-293655",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : [ {
+        "method" : "PUT",
+        "url" : "https://northamerica-1.object-storage.apple.com/itms-assets-prod-200001/PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/wQpg4AUeVOIu3DjHE60O5LHv8LecugJ-jgt2qJstJEo_U003d-1792848655232?partNumber=1&uploadId=23d2ccc0-cfaf-11f1-85aa-42961895bbb5&apple-asset-repo-correlation-key=UTJTS773KDCNMFQ2NUWBWUXW4Q&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261024T133055Z&X-Amz-SignedHeaders=host&X-Amz-Credential=PKIAI0ZGNAD8WKMSOOX0%2F20261024%2Fnorthamerica-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=c65b0b23f8fb8aa4d2f5cb5cc591b35ec9eabbef9f106af7148f9721bf5e3062",
+        "length" : 293655,
+        "offset" : 0,
+        "requestHeaders" : [ {
+          "name" : "Content-Type",
+          "value" : "application/octet-stream"
+        } ],
+        "expiration" : "2026-10-31T06:30:55.418-07:00",
+        "partNumber" : 1,
+        "entityTag" : null
+      } ],
+      "uti" : "com.pkware.zip-archive"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+  }
+}
+=======================================
+2026-10-24 13:30:55.607 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Sending SPI analysis to App Store Connect…
+2026-10-24 13:30:55.609 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+UPLOADING SPI ANALYSIS
+=======================================
+2026-10-24 13:30:55.610 DEBUG: [ContentDelivery.Uploader.CA5678B80] Created the temporary directory '/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/com.apple.cds.vbtx/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:30:55.624 DEBUG: [ContentDelivery.Uploader.CA5678B80] Part 1 still needs to be uploaded (293655 bytes).
+2026-10-24 13:30:55.625 DEBUG: [ContentDelivery.Uploader.CA5678B80] Part 1 will expire on 2026-10-31T13:30:55.418000+00:00.
+2026-10-24 13:30:55.631 DEBUG: [ContentDelivery.Uploader.CA5678B80] Wrote part 1 to temp file '/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/com.apple.cds.vbtx/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9/Part-1.tmp'.
+2026-10-24 13:30:55.632 DEBUG: [ContentDelivery.Uploader.CA5678B80] Adding upload task for part 1.
+2026-10-24 13:30:55.634 DEBUG: [ContentDelivery.Uploader.CA5678B80] Waiting for 1 upload task to finish.
+2026-10-24 13:30:55.642 DEBUG: [ContentDelivery.Uploader.CA567A040] PROGRESS - PART 1 (293655) - 'DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip' 100.00% (293655/293655)
+2026-10-24 13:30:55.997 DEBUG: [ContentDelivery.Uploader.CA5678580] COMPLETED - PART 1 - DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip - eTag: "A32F5FEA6206EB36689B29D7BEA25A3E"
+2026-10-24 13:30:56.000 DEBUG: [ContentDelivery.Uploader.CA5678580] Removed temporary part file '/private/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/com.apple.cds.vbtx/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9/Part-1.tmp'.
+2026-10-24 13:30:56.000 DEBUG: [ContentDelivery.Uploader.CA5678580] Saving uploader state (CDUploaderStateUploadAssetDescription) for identifier 'com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:30:56.003 DEBUG: [ContentDelivery.Uploader.CA5678580] Wrote state to '~/Library/Application Support/com.apple.dt.Xcode.ITunesSoftwareService/CDUploads/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9.plist'.
+2026-10-24 13:30:56.004 DEBUG: [ContentDelivery.Uploader.CA5678580] All parts have been uploaded.
+2026-10-24 13:30:56.005 DEBUG: [ContentDelivery.Uploader.CA5678B80] Time to transfer: 0.010 seconds
+2026-10-24 13:30:56.006 DEBUG: [ContentDelivery.Uploader.CA5678B80] Removed temporary directory '/private/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/com.apple.cds.vbtx/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:30:56.009 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_SPI) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:56.372 DEBUG: [ContentDelivery.Uploader.CA5678580] Download task 14 did write 2117 bytes.
+2026-10-24 13:30:56.372 DEBUG: [ContentDelivery.Uploader.CA5678580] Download task 14 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_RVtsG3.tmp
+2026-10-24 13:30:56.373 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:56.373 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_SPI) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:56 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "270 ms";
+    b3 = "1289cdf5bbb578f3454e9259379dcbb2-dde7a3719d68fa07";
+    "x-apple-jingle-correlation-key" = CKE435N3WV4PGRKOSJMTPHOLWI;
+    "x-b3-parentspanid" = 1a50678f6528aed3;
+    "x-b3-spanid" = dde7a3719d68fa07;
+    "x-b3-traceid" = f99a838397d57245;
+    "x-daiquiri-debug-worker-pid" = "44282, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3579;";
+    "x-request-id" = CKE435N3WV4PGRKOSJMTPHOLWI;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-tznz4:ac-gateway-api-main-7b4845dfd9-tznz4:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "6a4ab50b-0586-4316-be30-72555cababb2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "AWAITING_UPLOAD"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/2a31fd1b-419a-4b1c-92a7-cff6015d8161",
+      "assetType" : "ASSET_SPI",
+      "fileName" : "DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip",
+      "fileSize" : 293655,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "A32F5FEA6206EB36689B29D7BEA25A3E",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "69B795B22E18EB487DD2B449B8B884A2-1-293655",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : [ {
+        "method" : "PUT",
+        "url" : "https://northamerica-1.object-storage.apple.com/itms-assets-prod-200001/PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/wQpg4AUeVOIu3DjHE60O5LHv8LecugJ-jgt2qJstJEo_U003d-1792848655232?partNumber=1&uploadId=23d2ccc0-cfaf-11f1-85aa-42961895bbb5&apple-asset-repo-correlation-key=UTJTS773KDCNMFQ2NUWBWUXW4Q&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261024T133055Z&X-Amz-SignedHeaders=host&X-Amz-Credential=PKIAI0ZGNAD8WKMSOOX0%2F20261024%2Fnorthamerica-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=c65b0b23f8fb8aa4d2f5cb5cc591b35ec9eabbef9f106af7148f9721bf5e3062",
+        "length" : 293655,
+        "offset" : 0,
+        "requestHeaders" : [ {
+          "name" : "Content-Type",
+          "value" : "application/octet-stream"
+        } ],
+        "expiration" : "2026-10-31T06:30:55.418-07:00",
+        "partNumber" : 1,
+        "entityTag" : "A32F5FEA6206EB36689B29D7BEA25A3E"
+      } ],
+      "uti" : "com.pkware.zip-archive"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+  }
+}
+=======================================
+2026-10-24 13:30:56.375 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Waiting for App Store Connect SPI analysis response…
+2026-10-24 13:30:56.375 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+CHANGE UPLOAD STATE TO COMPLETE (UPLOADING SPI ANALYSIS)
+=======================================
+2026-10-24 13:30:56.378 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+CHANGE UPLOAD STATE TO COMPLETE (UPLOADING SPI ANALYSIS) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+     timeout: 900 seconds
+      method: PATCH
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Length" = 111;
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: {"data":{"attributes":{"uploaded":true},"id":"6a4ab50b-0586-4316-be30-72555cababb2","type":"buildUploadFiles"}}
+========================================
+2026-10-24 13:30:56.382 DEBUG: [ContentDelivery.Uploader.CA5678580] Download task 15 sent 111 bytes (111 of 111 bytes sent).
+2026-10-24 13:30:57.884 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 15 did write 1155 bytes.
+2026-10-24 13:30:57.885 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 15 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_kJm2Ly.tmp
+2026-10-24 13:30:57.885 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:57.886 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+CHANGE UPLOAD STATE TO COMPLETE (UPLOADING SPI ANALYSIS) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:58 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "1428 ms";
+    b3 = "06f9acfc052a95cb6d420bbeef5b28c3-61b06f24678fe219";
+    "x-apple-jingle-correlation-key" = A342Z7AFFKK4W3KCBO7O6WZIYM;
+    "x-b3-parentspanid" = 5417ab5dd26e5f40;
+    "x-b3-spanid" = 61b06f24678fe219;
+    "x-b3-traceid" = 819f6542501f5478;
+    "x-daiquiri-debug-worker-pid" = "40051, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3578;";
+    "x-request-id" = A342Z7AFFKK4W3KCBO7O6WZIYM;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-5dpds:ac-gateway-api-main-7b4845dfd9-5dpds:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "6a4ab50b-0586-4316-be30-72555cababb2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "UPLOAD_COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/2a31fd1b-419a-4b1c-92a7-cff6015d8161",
+      "assetType" : "ASSET_SPI",
+      "fileName" : "DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip",
+      "fileSize" : 293655,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "A32F5FEA6206EB36689B29D7BEA25A3E",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "69B795B22E18EB487DD2B449B8B884A2-1-293655",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.pkware.zip-archive"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+  }
+}
+=======================================
+2026-10-24 13:30:57.887 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+========================================
+Set ASSET_SPI status to UPLOAD_COMPLETE
+========================================
+2026-10-24 13:30:57.888 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_SPI) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:57.984 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 16 did write 1155 bytes.
+2026-10-24 13:30:57.984 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 16 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_CB7zTn.tmp
+2026-10-24 13:30:57.985 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:57.986 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_SPI) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:58 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "22 ms";
+    b3 = "eca3ae5cecb72bfa4ce027a5e00cc4ec-2e6cabd1855275c6";
+    "x-apple-jingle-correlation-key" = 5SR24XHMW4V7UTHAE6S6ADGE5Q;
+    "x-b3-parentspanid" = d5c28ff1d72409d5;
+    "x-b3-spanid" = 2e6cabd1855275c6;
+    "x-b3-traceid" = 2103d9ed614302d9;
+    "x-daiquiri-debug-worker-pid" = "47676, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3577;";
+    "x-request-id" = 5SR24XHMW4V7UTHAE6S6ADGE5Q;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-9jw82:ac-gateway-api-main-7b4845dfd9-9jw82:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "6a4ab50b-0586-4316-be30-72555cababb2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "UPLOAD_COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/2a31fd1b-419a-4b1c-92a7-cff6015d8161",
+      "assetType" : "ASSET_SPI",
+      "fileName" : "DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip",
+      "fileSize" : 293655,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "A32F5FEA6206EB36689B29D7BEA25A3E",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "69B795B22E18EB487DD2B449B8B884A2-1-293655",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.pkware.zip-archive"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+  }
+}
+=======================================
+2026-10-24 13:30:57.988 DEBUG: [ContentDelivery.Uploader.CA5678B80] Waiting for 'ASSET_SPI' to complete.
+2026-10-24 13:30:57.989 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Waiting for App Store Connect SPI analysis response…
+2026-10-24 13:30:57.990 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_SPI) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:30:58.093 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 17 did write 1155 bytes.
+2026-10-24 13:30:58.093 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 17 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_Xznx7P.tmp
+2026-10-24 13:30:58.093 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:30:58.094 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_SPI) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:30:58 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "25 ms";
+    b3 = "e9cd8119c271d46b5818c62907b06211-cec22f49f8dedb28";
+    "x-apple-jingle-correlation-key" = 5HGYCGOCOHKGWWAYYYUQPMDCCE;
+    "x-b3-parentspanid" = 265a3fa8904abb6b;
+    "x-b3-spanid" = cec22f49f8dedb28;
+    "x-b3-traceid" = 4d061dd3d260d520;
+    "x-daiquiri-debug-worker-pid" = "47669, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3576;";
+    "x-request-id" = 5HGYCGOCOHKGWWAYYYUQPMDCCE;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-j5w52:ac-gateway-api-main-7b4845dfd9-j5w52:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "6a4ab50b-0586-4316-be30-72555cababb2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "UPLOAD_COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/2a31fd1b-419a-4b1c-92a7-cff6015d8161",
+      "assetType" : "ASSET_SPI",
+      "fileName" : "DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip",
+      "fileSize" : 293655,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "A32F5FEA6206EB36689B29D7BEA25A3E",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "69B795B22E18EB487DD2B449B8B884A2-1-293655",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.pkware.zip-archive"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+  }
+}
+=======================================
+2026-10-24 13:30:58.096 DEBUG: [ContentDelivery.Uploader.CA5678B80] Upload state is 'UPLOAD_COMPLETE' (200).
+2026-10-24 13:30:58.096 DEBUG: [ContentDelivery.Uploader.CA5678B80] Will check again in 5 seconds.
+2026-10-24 13:31:03.240 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_SPI) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:31:03.352 DEBUG: [ContentDelivery.Uploader.CA546F680] Download task 18 did write 1155 bytes.
+2026-10-24 13:31:03.353 DEBUG: [ContentDelivery.Uploader.CA546F680] Download task 18 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_hiW3Dw.tmp
+2026-10-24 13:31:03.354 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:31:03.355 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_SPI) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:31:03 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "24 ms";
+    b3 = "fea209e5aa815880aef9fe325c8cf60e-cc825d0473ca6be3";
+    "x-apple-jingle-correlation-key" = 72RATZNKQFMIBLXZ7YZFZDHWBY;
+    "x-b3-parentspanid" = 419048a50d829aa2;
+    "x-b3-spanid" = cc825d0473ca6be3;
+    "x-b3-traceid" = 7d46e546dfc39c65;
+    "x-daiquiri-debug-worker-pid" = "40051, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3575;";
+    "x-request-id" = 72RATZNKQFMIBLXZ7YZFZDHWBY;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-4sqnd:ac-gateway-api-main-7b4845dfd9-4sqnd:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "6a4ab50b-0586-4316-be30-72555cababb2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "UPLOAD_COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/2a31fd1b-419a-4b1c-92a7-cff6015d8161",
+      "assetType" : "ASSET_SPI",
+      "fileName" : "DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip",
+      "fileSize" : 293655,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "A32F5FEA6206EB36689B29D7BEA25A3E",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "69B795B22E18EB487DD2B449B8B884A2-1-293655",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.pkware.zip-archive"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+  }
+}
+=======================================
+2026-10-24 13:31:03.356 DEBUG: [ContentDelivery.Uploader.CA5678B80] Upload state is 'UPLOAD_COMPLETE' (200).
+2026-10-24 13:31:03.356 DEBUG: [ContentDelivery.Uploader.CA5678B80] Will check again in 5 seconds.
+2026-10-24 13:31:08.488 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_SPI) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:31:08.585 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 19 did write 1155 bytes.
+2026-10-24 13:31:08.586 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 19 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_zVgK7Z.tmp
+2026-10-24 13:31:08.587 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:31:08.588 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_SPI) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:31:08 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "21 ms";
+    b3 = "5ae35586eb36f916d4b12c8d717082fe-2b3ecd37dcaf4861";
+    "x-apple-jingle-correlation-key" = LLRVLBXLG34RNVFRFSGXC4EC7Y;
+    "x-b3-parentspanid" = 7ad3118d6eacccfa;
+    "x-b3-spanid" = 2b3ecd37dcaf4861;
+    "x-b3-traceid" = 8c26ef9ae9372e88;
+    "x-daiquiri-debug-worker-pid" = "47676, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3574;";
+    "x-request-id" = LLRVLBXLG34RNVFRFSGXC4EC7Y;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-mpgzv:ac-gateway-api-main-7b4845dfd9-mpgzv:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "6a4ab50b-0586-4316-be30-72555cababb2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "UPLOAD_COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/2a31fd1b-419a-4b1c-92a7-cff6015d8161",
+      "assetType" : "ASSET_SPI",
+      "fileName" : "DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip",
+      "fileSize" : 293655,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "A32F5FEA6206EB36689B29D7BEA25A3E",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "69B795B22E18EB487DD2B449B8B884A2-1-293655",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.pkware.zip-archive"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+  }
+}
+=======================================
+2026-10-24 13:31:08.590 DEBUG: [ContentDelivery.Uploader.CA5678B80] Upload state is 'UPLOAD_COMPLETE' (200).
+2026-10-24 13:31:08.590 DEBUG: [ContentDelivery.Uploader.CA5678B80] Will check again in 5 seconds.
+2026-10-24 13:31:13.624 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_SPI) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:31:13.742 DEBUG: [ContentDelivery.Uploader.CA567AF80] Download task 20 did write 1148 bytes.
+2026-10-24 13:31:13.743 DEBUG: [ContentDelivery.Uploader.CA567AF80] Download task 20 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_Deqlg0.tmp
+2026-10-24 13:31:13.744 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:31:13.746 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET UPLOAD STATE (ASSET_SPI) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:31:14 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "37 ms";
+    b3 = "030726c578f524f9959c503caa352b33-88ac5ca0f07be57f";
+    "x-apple-jingle-correlation-key" = AMDSNRLY6USPTFM4KA6KUNJLGM;
+    "x-b3-parentspanid" = fd1d77d22e86b903;
+    "x-b3-spanid" = 88ac5ca0f07be57f;
+    "x-b3-traceid" = 60148687fa4cf70e;
+    "x-daiquiri-debug-worker-pid" = "47669, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3573;";
+    "x-request-id" = AMDSNRLY6USPTFM4KA6KUNJLGM;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-bg9qt:ac-gateway-api-main-7b4845dfd9-bg9qt:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "6a4ab50b-0586-4316-be30-72555cababb2",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/2a31fd1b-419a-4b1c-92a7-cff6015d8161",
+      "assetType" : "ASSET_SPI",
+      "fileName" : "DTAppAnalyzerExtractorOutput-12ADA7FF-145A-4851-9321-DF9F77EE688F.zip",
+      "fileSize" : 293655,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "A32F5FEA6206EB36689B29D7BEA25A3E",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "69B795B22E18EB487DD2B449B8B884A2-1-293655",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.pkware.zip-archive"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/6a4ab50b-0586-4316-be30-72555cababb2"
+  }
+}
+=======================================
+2026-10-24 13:31:13.747 DEBUG: [ContentDelivery.Uploader.CA5678B80] Upload state is 'COMPLETE' (200).
+2026-10-24 13:31:13.751 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+[GRAPH-OVERALL],time,Mbps,totalBytesSent
+[GRAPH-PART-COMPLETE],time,Mbps
+2026-10-24 13:31:13.751 DEBUG: [ContentDelivery.Uploader.CA5678B80] Running state 'CDUploaderStateRetrieveUploadOperations'...
+2026-10-24 13:31:13.752 DEBUG: [ContentDelivery.Uploader.CA5678B80] Saving uploader state (CDUploaderStateRetrieveUploadOperations) for identifier 'com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:31:13.754 DEBUG: [ContentDelivery.Uploader.CA5678B80] Wrote state to '~/Library/Application Support/com.apple.dt.Xcode.ITunesSoftwareService/CDUploads/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9.plist'.
+2026-10-24 13:31:13.755 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Requesting upload instructions from App Store Connect…
+2026-10-24 13:31:13.759 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+RETRIEVE UPLOAD OPERATIONS (ASSET_UPLOAD) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles
+     timeout: 900 seconds
+      method: POST
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Length" = 244;
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: {"data":{"attributes":{"assetType":"ASSET","fileName":"Steady.ipa","fileSize":642537,"uti":"com.apple.ipa"},"relationships":{"buildUpload":{"data":{"id":"c6cea91a-0166-4cca-a3ac-55422203944f","type":"buildUploads"}}},"type":"buildUploadFiles"}}
+========================================
+2026-10-24 13:31:13.763 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 21 sent 244 bytes (244 of 244 bytes sent).
+2026-10-24 13:31:14.075 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 21 did write 1789 bytes.
+2026-10-24 13:31:14.076 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 21 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_uSYr7n.tmp
+2026-10-24 13:31:14.077 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:31:14.078 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+RETRIEVE UPLOAD OPERATIONS (ASSET_UPLOAD) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles
+ status code: 201 (created)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:31:14 GMT";
+    Location = "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/62c8f03a-9785-4929-9dc4-7e68eb6989b3";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "246 ms";
+    b3 = "3d58c44f064c4789b50c4a2606644679-f5dc8e6e4f56dff2";
+    "x-apple-jingle-correlation-key" = HVMMITYGJRDYTNIMJITAMZCGPE;
+    "x-b3-parentspanid" = a5586e00fb135f19;
+    "x-b3-spanid" = f5dc8e6e4f56dff2;
+    "x-b3-traceid" = 233fbded38b54f0b;
+    "x-daiquiri-debug-worker-pid" = "47672, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3572;";
+    "x-request-id" = HVMMITYGJRDYTNIMJITAMZCGPE;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-2pvs9:ac-gateway-api-main-7b4845dfd9-2pvs9:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "62c8f03a-9785-4929-9dc4-7e68eb6989b3",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "AWAITING_UPLOAD"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/9614733c-8cc3-4c7f-afa3-0af0cae89d6d.ipa",
+      "assetType" : "ASSET",
+      "fileName" : "Steady.ipa",
+      "fileSize" : 642537,
+      "sourceFileChecksums" : {
+        "file" : null,
+        "composite" : null
+      },
+      "uploadOperations" : [ {
+        "method" : "PUT",
+        "url" : "https://northamerica-1.object-storage.apple.com/itms-assets-prod-200001/PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/1qyEnzGAoJOXS-u1kBznOEBvFp-hIolUyFdxGaKt32I_U003d-1792848674213?partNumber=1&uploadId=2f22eb00-cfaf-11f1-b20e-6cfe54c51701&apple-asset-repo-correlation-key=HVMMITYGJRDYTNIMJITAMZCGPE&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261024T133114Z&X-Amz-SignedHeaders=host&X-Amz-Credential=PKIAI0ZGNAD8WKMSOOX0%2F20261024%2Fnorthamerica-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=cfc1a89368c3fd4706bed6ebf3c40363a1ba1d853586fc3830a62d9f0321671b",
+        "length" : 642537,
+        "offset" : 0,
+        "requestHeaders" : [ {
+          "name" : "Content-Type",
+          "value" : "application/octet-stream"
+        } ],
+        "expiration" : "2026-10-31T06:31:14.385-07:00",
+        "partNumber" : 1,
+        "entityTag" : null
+      } ],
+      "uti" : "com.apple.ipa"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/62c8f03a-9785-4929-9dc4-7e68eb6989b3"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles"
+  }
+}
+=======================================
+2026-10-24 13:31:14.081 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+UPDATE buildUploadFiles CHECKSUM REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/62c8f03a-9785-4929-9dc4-7e68eb6989b3
+     timeout: 900 seconds
+      method: PATCH
+ httpHeaders: {
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Length" = 271;
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: {"data":{"attributes":{"sourceFileChecksums":{"composite":{"algorithm":"MD5","hash":"10EF4FC50E8E4216F2542B9B2AF49ABA-1-642537"},"file":{"algorithm":"MD5","hash":"5FC3420C332B68DB85D587C1502FBB6C"}}},"id":"62c8f03a-9785-4929-9dc4-7e68eb6989b3","type":"buildUploadFiles"}}
+========================================
+2026-10-24 13:31:14.086 DEBUG: [ContentDelivery.Uploader.CA546F680] Download task 22 sent 271 bytes (271 of 271 bytes sent).
+2026-10-24 13:31:14.490 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 22 did write 2019 bytes.
+2026-10-24 13:31:14.492 DEBUG: [ContentDelivery.Uploader.CA546DA80] Download task 22 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_2XEoFo.tmp
+2026-10-24 13:31:14.493 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:31:14.494 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+UPDATE buildUploadFiles CHECKSUM RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/62c8f03a-9785-4929-9dc4-7e68eb6989b3
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:31:14 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "317 ms";
+    b3 = "a3e775f6d41d239d045fa0b54bc0eeeb-cd1f63d376d68a71";
+    "x-apple-jingle-correlation-key" = UPTXL5WUDURZ2BC7UC2UXQHO5M;
+    "x-b3-parentspanid" = a5ee144d4a791d16;
+    "x-b3-spanid" = cd1f63d376d68a71;
+    "x-b3-traceid" = 5b73b191fd39e7c2;
+    "x-daiquiri-debug-worker-pid" = "47676, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3571;";
+    "x-request-id" = UPTXL5WUDURZ2BC7UC2UXQHO5M;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-pwpxs:ac-gateway-api-main-7b4845dfd9-pwpxs:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "62c8f03a-9785-4929-9dc4-7e68eb6989b3",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "AWAITING_UPLOAD"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/9614733c-8cc3-4c7f-afa3-0af0cae89d6d.ipa",
+      "assetType" : "ASSET",
+      "fileName" : "Steady.ipa",
+      "fileSize" : 642537,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "5FC3420C332B68DB85D587C1502FBB6C",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "10EF4FC50E8E4216F2542B9B2AF49ABA-1-642537",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : [ {
+        "method" : "PUT",
+        "url" : "https://northamerica-1.object-storage.apple.com/itms-assets-prod-200001/PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/1qyEnzGAoJOXS-u1kBznOEBvFp-hIolUyFdxGaKt32I_U003d-1792848674213?partNumber=1&uploadId=2f22eb00-cfaf-11f1-b20e-6cfe54c51701&apple-asset-repo-correlation-key=HVMMITYGJRDYTNIMJITAMZCGPE&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20261024T133114Z&X-Amz-SignedHeaders=host&X-Amz-Credential=PKIAI0ZGNAD8WKMSOOX0%2F20261024%2Fnorthamerica-1%2Fs3%2Faws4_request&X-Amz-Expires=604800&X-Amz-Signature=cfc1a89368c3fd4706bed6ebf3c40363a1ba1d853586fc3830a62d9f0321671b",
+        "length" : 642537,
+        "offset" : 0,
+        "requestHeaders" : [ {
+          "name" : "Content-Type",
+          "value" : "application/octet-stream"
+        } ],
+        "expiration" : "2026-10-31T06:31:14.385-07:00",
+        "partNumber" : 1,
+        "entityTag" : null
+      } ],
+      "uti" : "com.apple.ipa"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/62c8f03a-9785-4929-9dc4-7e68eb6989b3"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/62c8f03a-9785-4929-9dc4-7e68eb6989b3"
+  }
+}
+=======================================
+2026-10-24 13:31:14.496 DEBUG: [ContentDelivery.Uploader.CA5678B80] File checksum matched the file.
+2026-10-24 13:31:14.496 DEBUG: [ContentDelivery.Uploader.CA5678B80] Composite checksum matched the file.
+2026-10-24 13:31:14.497 DEBUG: [ContentDelivery.Uploader.CA5678B80] Running state 'CDUploaderStatePrepareAssetUpload'...
+2026-10-24 13:31:14.497 DEBUG: [ContentDelivery.Uploader.CA5678B80] Saving uploader state (CDUploaderStatePrepareAssetUpload) for identifier 'com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:31:14.499 DEBUG: [ContentDelivery.Uploader.CA5678B80] Wrote state to '~/Library/Application Support/com.apple.dt.Xcode.ITunesSoftwareService/CDUploads/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9.plist'.
+2026-10-24 13:31:14.499 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Preparing file for upload to App Store Connect…
+2026-10-24 13:31:14.500 DEBUG: [ContentDelivery.Uploader.CA5678B80] Build ID c6cea91a-0166-4cca-a3ac-55422203944f is in state AWAITING_UPLOAD
+2026-10-24 13:31:14.501 DEBUG: [ContentDelivery.Uploader.CA5678B80] Part 1 still needs to be uploaded (642537 bytes).
+2026-10-24 13:31:14.501 DEBUG: [ContentDelivery.Uploader.CA5678B80] Part 1 will expire on 2026-10-31T13:31:14.385000+00:00.
+2026-10-24 13:31:14.501 DEBUG: [ContentDelivery.Uploader.CA5678B80] 1 upload operations were requested for 1 parts. (Build ID = c6cea91a-0166-4cca-a3ac-55422203944f)
+2026-10-24 13:31:14.504 DEBUG: [ContentDelivery.Uploader.CA5678B80] Created RESUME file at path: '~/Library/Caches/com.apple.cds.vbtx/ResumeFiles/6826537925/IOS_3_1.0'.
+2026-10-24 13:31:14.509 DEBUG: [ContentDelivery.Uploader.CA5678B80] Created temporary directory '/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/com.apple.cds.vbtx/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:31:14.511 DEBUG: [ContentDelivery.Uploader.CA5678B80] Running state 'CDUploaderStateUploadAssetDirectly'...
+2026-10-24 13:31:14.511 DEBUG: [ContentDelivery.Uploader.CA5678B80] Saving uploader state (CDUploaderStateUploadAssetDirectly) for identifier 'com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:31:14.514 DEBUG: [ContentDelivery.Uploader.CA5678B80] Wrote state to '~/Library/Application Support/com.apple.dt.Xcode.ITunesSoftwareService/CDUploads/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9.plist'.
+2026-10-24 13:31:14.514 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Preparing file for upload to App Store Connect…
+2026-10-24 13:31:14.515 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Uploading to App Store Connect…
+2026-10-24 13:31:14.516 DEBUG: [ContentDelivery.Uploader.CA5678B80] Will upload up to 6 parts concurrently.
+2026-10-24 13:31:14.516 DEBUG: [ContentDelivery.Uploader.CA5678B80] Waiting for 1 parts to upload.
+2026-10-24 13:31:14.516 DEBUG: [ContentDelivery.Uploader.CA567A040] Created upload task ID 23 for part 1.
+2026-10-24 13:31:14.517 DEBUG: [ContentDelivery.Uploader.CA567A040] PART 1 STARTED
+2026-10-24 13:31:14.518 DEBUG: [ContentDelivery.Uploader.CA567A040] Waiting for part 1 to upload.
+2026-10-24 13:31:14.532 DEBUG: [ContentDelivery.Uploader.CA567AF80] PROGRESS - PART 1 (642537) - 'Steady.ipa' 100.00% (642537/642537)
+2026-10-24 13:31:14.534 DEBUG: [ContentDelivery.Uploader.CA567AF80] Show Progress: Uploading to App Store Connect…
+2026-10-24 13:31:14.746 DEBUG: [ContentDelivery.Uploader.CA567AF80] COMPLETED - PART 1 - Steady.ipa - eTag: "5FC3420C332B68DB85D587C1502FBB6C"
+2026-10-24 13:31:14.747 DEBUG: [ContentDelivery.Uploader.CA567A040] Done with uploading part 1.
+2026-10-24 13:31:14.747 DEBUG: [ContentDelivery.Uploader.CA567AF80] Saving uploader state (CDUploaderStateUploadAssetDirectly) for identifier 'com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:31:14.750 DEBUG: [ContentDelivery.Uploader.CA567AF80] Wrote state to '~/Library/Application Support/com.apple.dt.Xcode.ITunesSoftwareService/CDUploads/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9.plist'.
+2026-10-24 13:31:14.750 DEBUG: [ContentDelivery.Uploader.CA567AF80] All parts have been uploaded.
+2026-10-24 13:31:14.750 DEBUG: [ContentDelivery.Uploader.CA567A040] PART 1 THROUGHPUT - 642537 bytes in 0.234 seconds, 21.970 Mbps
+[GRAPH-PART-COMPLETE-1],0.03076579166668125,21.97037059673093
+2026-10-24 13:31:14.751 DEBUG: [ContentDelivery.Uploader.CA5678B80] Removed temporary directory '/private/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/com.apple.cds.vbtx/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:31:14.751 DEBUG: [ContentDelivery.Uploader.CA5678B80] Running state 'CDUploaderStateChangeUploadStateToComplete'...
+2026-10-24 13:31:14.751 DEBUG: [ContentDelivery.Uploader.CA5678B80] Saving uploader state (CDUploaderStateChangeUploadStateToComplete) for identifier 'com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:31:14.753 DEBUG: [ContentDelivery.Uploader.CA5678B80] Wrote state to '~/Library/Application Support/com.apple.dt.Xcode.ITunesSoftwareService/CDUploads/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9.plist'.
+2026-10-24 13:31:14.754 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Completing upload…
+2026-10-24 13:31:14.754 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+CHANGE UPLOAD STATE TO COMPLETE (ASSET_UPLOAD)
+=======================================
+2026-10-24 13:31:14.756 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+CHANGE UPLOAD STATE TO COMPLETE (ASSET_UPLOAD) REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/62c8f03a-9785-4929-9dc4-7e68eb6989b3
+     timeout: 900 seconds
+      method: PATCH
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Length" = 111;
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: {"data":{"attributes":{"uploaded":true},"id":"62c8f03a-9785-4929-9dc4-7e68eb6989b3","type":"buildUploadFiles"}}
+========================================
+2026-10-24 13:31:14.761 DEBUG: [ContentDelivery.Uploader.CA546C300] Download task 24 sent 111 bytes (111 of 111 bytes sent).
+2026-10-24 13:31:15.818 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 24 did write 1080 bytes.
+2026-10-24 13:31:15.819 DEBUG: [ContentDelivery.Uploader.CA567A040] Download task 24 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_Kpsyyz.tmp
+2026-10-24 13:31:15.820 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:31:15.820 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+CHANGE UPLOAD STATE TO COMPLETE (ASSET_UPLOAD) RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploadFiles/62c8f03a-9785-4929-9dc4-7e68eb6989b3
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:31:16 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "989 ms";
+    b3 = "98e246aa046afe86ccaa56cc278331a4-18e037769bab1fcf";
+    "x-apple-jingle-correlation-key" = TDRENKQENL7INTFKK3GCPAZRUQ;
+    "x-b3-parentspanid" = 615ef9b1db7eee9f;
+    "x-b3-spanid" = 18e037769bab1fcf;
+    "x-b3-traceid" = c65f0f990ba3ad95;
+    "x-daiquiri-debug-worker-pid" = "44307, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3570;";
+    "x-request-id" = TDRENKQENL7INTFKK3GCPAZRUQ;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-vhnmg:ac-gateway-api-main-7b4845dfd9-vhnmg:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploadFiles",
+    "id" : "62c8f03a-9785-4929-9dc4-7e68eb6989b3",
+    "attributes" : {
+      "assetDeliveryState" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "state" : "COMPLETE"
+      },
+      "assetToken" : "PurpleSource211/v4/5b/12/35/5b12352a-8f59-8043-7360-a24cf7c0aa61/9614733c-8cc3-4c7f-afa3-0af0cae89d6d.ipa",
+      "assetType" : "ASSET",
+      "fileName" : "Steady.ipa",
+      "fileSize" : 642537,
+      "sourceFileChecksums" : {
+        "file" : {
+          "hash" : "5FC3420C332B68DB85D587C1502FBB6C",
+          "algorithm" : "MD5"
+        },
+        "composite" : {
+          "hash" : "10EF4FC50E8E4216F2542B9B2AF49ABA-1-642537",
+          "algorithm" : "MD5"
+        }
+      },
+      "uploadOperations" : null,
+      "uti" : "com.apple.ipa"
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/62c8f03a-9785-4929-9dc4-7e68eb6989b3"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploadFiles/62c8f03a-9785-4929-9dc4-7e68eb6989b3"
+  }
+}
+=======================================
+2026-10-24 13:31:15.821 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+========================================
+Set ASSET status to COMPLETE
+========================================
+2026-10-24 13:31:15.822 DEBUG: [ContentDelivery.Uploader.CA5678B80] Running state 'CDUploaderStateCheckForProcessing'...
+2026-10-24 13:31:15.822 DEBUG: [ContentDelivery.Uploader.CA5678B80] Saving uploader state (CDUploaderStateCheckForProcessing) for identifier 'com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:31:15.824 DEBUG: [ContentDelivery.Uploader.CA5678B80] Wrote state to '~/Library/Application Support/com.apple.dt.Xcode.ITunesSoftwareService/CDUploads/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9.plist'.
+2026-10-24 13:31:15.824 DEBUG: [ContentDelivery.Uploader.CA5678D40] Task ‘CDTask’ did terminate in ‘CDOSLogFilter’ with exit code 143.
+2026-10-24 13:31:15.824 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Waiting for package to begin processing…
+2026-10-24 13:31:15.825 DEBUG: [ContentDelivery.Uploader.CA546C300] Sending upload complete (INFO) KPI for 'VoiceBoxClient-CD'. type=app_ipa, numPartsToUpload=1, numPartsUploaded=1, numPartsPreviouslyUploaded=0, numPartsRetried=0, numRetries=0, bytesLost=0, bytesSent=642537, elapsedTimeSecs=0.031s, throughput=20884786 bytes/sec, throughputMbps=167.078, API=1, transport=HTTPS
+2026-10-24 13:31:15.825 DEBUG: [ContentDelivery.Uploader.CA5678D40] Finished: '/usr/bin/log stream --predicate process contains "Xcode" and subsystem == "com.apple.network" --debug --info --style compact' with status 143
+2026-10-24 13:31:15.867 DEBUG: [ContentDelivery.Uploader.CA5678D40] *** /usr/bin/log result: 143
+stdout: (null)
+stderr: 
+2026-10-24 13:31:15.866 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+======================
+GET BUILD UPLOAD STATE
+======================
+2026-10-24 13:31:15.868 DEBUG: [ContentDelivery.Uploader.CA546C300] 
+==========================
+KPI REQUEST (VoiceBoxClient-CD)
+  URLRequest:
+    endpoint: https://contentdelivery.itunes.apple.com/MZContentDeliveryService/iris/v1/metricsAndLogging
+     timeout: 900 seconds
+      method: POST
+ httpHeaders: {
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Length" = 602;
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: {"data":{"attributes":{"items":[{"correlationKey":"c6cea91a-0166-4cca-a3ac-55422203944f","kpiValue":20884786,"kpiValueType":"Counter","level":"INFO","message":"type=app_ipa, numPartsToUpload=1, numPartsUploaded=1, numPartsPreviouslyUploaded=0, numPartsRetried=0, numRetries=0, bytesLost=0, bytesSent=642537, elapsedTimeSecs=0.031s, throughput=20884786 bytes/sec, throughputMbps=167.078, API=1, transport=HTTPS","name":"VoiceBoxClient-CD - Upload throughput (bytes/sec)","timestamp":"2026-10-24T13:31:15.821"}],"sourceApplication":"com.apple.dt.Xcode.ITunesSoftwareService"},"type":"metricsAndLogging"}}
+==========================
+2026-10-24 13:31:15.869 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET BUILD UPLOAD STATE REQUEST:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f
+     timeout: 900 seconds
+      method: GET
+ httpHeaders: {
+    Accept = "application/json";
+    "Accept-Language" = "en-US";
+    Authorization = "**hidden value**";
+    "Content-Type" = "application/json";
+    "User-Agent" = "Xcode/16.0-24904 (Macintosh; macOS 26.6.2 25G83 (arm64)) ContentDelivery/26.40.1-174001";
+}
+    httpBody: 
+========================================
+2026-10-24 13:31:15.968 DEBUG: [ContentDelivery.Uploader.CA5678D40] Download task 25 did write 1662 bytes.
+2026-10-24 13:31:15.968 DEBUG: [ContentDelivery.Uploader.CA5678D40] Download task 25 did write file: file:///var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/CFNetworkDownload_XcmadC.tmp
+2026-10-24 13:31:15.969 DEBUG: [ContentDelivery.Uploader.CA5678B80] Auth wants us to retry the response.
+2026-10-24 13:31:15.970 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+=======================================
+GET BUILD UPLOAD STATE RESPONSE:
+
+         URL: https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f
+ status code: 200 (no error)
+ httpHeaders: {
+    "Content-Encoding" = gzip;
+    "Content-Type" = "application/json";
+    Date = "Sat, 24 Oct 2026 13:31:16 GMT";
+    Server = "daiquiri/5";
+    "Strict-Transport-Security" = "max-age=31536000; includeSubDomains";
+    Vary = "accept-encoding";
+    "apple-timing-app" = "28 ms";
+    b3 = "e12c4cac0f46996e6f20436e71ebbec5-d2f2d794995478b6";
+    "x-apple-jingle-correlation-key" = 4EWEZLAPI2MW43ZAINXHD256YU;
+    "x-b3-parentspanid" = 5a127136a6fe53cb;
+    "x-b3-spanid" = d2f2d794995478b6;
+    "x-b3-traceid" = af8a81caa223d480;
+    "x-daiquiri-debug-worker-pid" = "44282, 25774";
+    "x-daiquiri-instance" = "daiquiri:38493001:pv50p00it-hyhk12043901:7987:26HOTFIX48:daiquiri-amp-all-shared-ext-001-pv";
+    "x-rate-limit" = "user-hour-lim:3600;user-hour-rem:3569;";
+    "x-request-id" = 4EWEZLAPI2MW43ZAINXHD256YU;
+    "x-responding-instance" = "ac-gateway-api:ac-gateway-api-main-7b4845dfd9-zch8z:ac-gateway-api-main-7b4845dfd9-zch8z:-1::::prod";
+    "x-unicorn-originated" = true;
+}
+    httpBody: {
+  "data" : {
+    "type" : "buildUploads",
+    "id" : "c6cea91a-0166-4cca-a3ac-55422203944f",
+    "attributes" : {
+      "cfBundleShortVersionString" : "1.0",
+      "cfBundleVersion" : "3",
+      "createdDate" : "2026-10-24T06:30:06-07:00",
+      "state" : {
+        "errors" : [ ],
+        "warnings" : [ ],
+        "infos" : [ ],
+        "state" : "PROCESSING"
+      },
+      "platform" : "IOS",
+      "uploadedDate" : "2026-10-24T06:31:16-07:00"
+    },
+    "relationships" : {
+      "buildUploadFiles" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/relationships/buildUploadFiles",
+          "related" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadFiles"
+        }
+      },
+      "buildUploadBundles" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/relationships/buildUploadBundles",
+          "related" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/buildUploadBundles"
+        }
+      },
+      "deliveryNotifications" : {
+        "links" : {
+          "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f/relationships/deliveryNotifications"
+        }
+      }
+    },
+    "links" : {
+      "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f"
+    }
+  },
+  "links" : {
+    "self" : "https://api.appstoreconnect.apple.com/v1/buildUploads/c6cea91a-0166-4cca-a3ac-55422203944f"
+  }
+}
+=======================================
+2026-10-24 13:31:15.971 DEBUG: [ContentDelivery.Uploader.CA5678B80] 
+==================================
+Upload State: PROCESSING
+==================================
+2026-10-24 13:31:15.971 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Uploaded package is processing.
+2026-10-24 13:31:15.972 DEBUG: [ContentDelivery.Uploader.CA5678B80] Removing uploader state for identifier 'com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'
+2026-10-24 13:31:15.974 DEBUG: [ContentDelivery.Uploader.CA5678B80] Wrote state to '~/Library/Application Support/com.apple.dt.Xcode.ITunesSoftwareService/CDUploads/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9.plist'.
+2026-10-24 13:31:15.977 DEBUG: [ContentDelivery.Uploader.CA5678B80] Removed the temporary asset directory '~/Library/Caches/com.apple.cds/com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:31:15.977 DEBUG: [ContentDelivery.Uploader.CA5678B80] Removing uploader saved state for identifier 'com.apple.cds_4C8FEE7D-B8D7-484B-8A99-979D787320E9'.
+2026-10-24 13:31:15.978 DEBUG: [ContentDelivery.Uploader.CA5678B80] Show Progress: Upload succeeded.
+2026-10-24 13:31:15.978  INFO: [ContentDelivery.Uploader.CA5678B80] 
+==========================================
+UPLOAD SUCCEEDED with no errors
+Delivery UUID: c6cea91a-0166-4cca-a3ac-55422203944f
+Transferred 642537 bytes in 0.031 seconds (20.9MB/s, 167.078Mbps)
+==========================================
+2026-10-24 13:31:15.978 DEBUG: [ContentDelivery.Uploader.CA5678B80] Log file path: /private/var/folders/n6/hn37q6pj7sj_9dmqqc2113800000gn/T/Steady_2026-10-24_13-30-03.722.xcdistributionlogs/ContentDelivery.log
