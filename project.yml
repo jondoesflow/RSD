@@ -43,6 +43,10 @@ targets:
         UISupportedInterfaceOrientations:
           - UIInterfaceOrientationPortrait
         ITSAppUsesNonExemptEncryption: false
+        NSLocalNetworkUsageDescription: Steady uses the local network to find your partner's phone nearby and sync your moments and plan directly between the two phones.
+        NSBonjourServices:
+          - _steady-sync._tcp
+          - _steady-sync._udp
 
   SteadyUITests:
     type: bundle.ui-testing

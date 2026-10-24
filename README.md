@@ -13,7 +13,7 @@ The names are editable, so any couple can use it.
 | **Right now** | Pick **Wobble**, **Storm** or **After the storm**. Each one shows what you might see, what's going on inside, what to do and avoid, and phrases you could say. It also holds the pause word, full-screen **signal cards** Jon can hold up when words won't come, a **breathe together** timer, and one-tap **check-in messages**. |
 | **Understand** | Short explainers: what RSD is, why it's so intense, its two faces (inward and outward), the everyday disguises (people-pleasing, perfectionism, avoidance), RSD in relationships, what helps, and some myths. It also has "In Jon's words" cards, a **Feelings finder**, a repair guide, and a self-care section for Katie. |
 | **Translate** | Everyday situations (a slow text reply, "we need to talk", a forgotten chore, feedback, cancelled plans, teasing). Each one shows *what you meant*, *what RSD might hear*, and *a way to say it instead*. |
-| **Us** | Jon's own plan: triggers, early warning signs, what helps, what makes it worse, the pause word and time-out length, and a note to Katie. It also has a **Moments log** for spotting patterns over time. |
+| **Us** | Jon's own plan: triggers, early warning signs, what helps, what makes it worse, the pause word and time-out length, and a note to Katie. It also has a **Moments log** for spotting patterns over time, and **Sync**, which shares the log and plan between both phones directly over Bluetooth/Wi-Fi, with no account or internet. |
 | **Listen & read** | ADHD Chatter episodes on RSD, other podcasts, Alex Partridge's book, the source articles, and UK support lines. |
 
 ### The Feelings finder

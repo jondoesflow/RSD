@@ -23,7 +23,7 @@ struct WelcomeView: View {
                         feature("lifepreserver", "Right now", "Step-by-step help for a wobble, a storm, and the moments after.")
                         feature("book", "Understand", "What RSD is, why it's so intense, and what really helps.")
                         feature("bubble.left.and.text.bubble.right", "Translate", "Everyday moments, and how they can land.")
-                        feature("person.2", "Us", "Your own plan: triggers, signs, what helps, and a pause word.")
+                        feature("person.2", "Us", "Your own plan, a moments log, and phone-to-phone sync with your partner.")
                     }
 
                     VStack(alignment: .leading, spacing: 12) {
@@ -32,6 +32,12 @@ struct WelcomeView: View {
                             .textFieldStyle(.roundedBorder)
                         TextField("Their partner", text: $store.profile.names.partner)
                             .textFieldStyle(.roundedBorder)
+                        Text("Whose phone is this?").font(.headline).padding(.top, 8)
+                        Picker("Whose phone is this?", selection: $store.device.owner) {
+                            Text(store.names.me.isEmpty ? "Person with RSD" : store.names.me).tag(Role?.some(.me))
+                            Text(store.names.partner.isEmpty ? "Partner" : store.names.partner).tag(Role?.some(.partner))
+                        }
+                        .pickerStyle(.segmented)
                     }
 
                     Text("Steady is for understanding and connection — it isn't medical advice. If RSD is having a big impact, talk to a GP or ADHD specialist.")

@@ -41,6 +41,30 @@ struct Moment: Codable, Identifiable, Equatable {
     var feltLike = ""
     var helped = ""
     var notes = ""
+    /// Name of the person who logged it.
+    var loggedBy = ""
+    /// Last edit, used to pick the newest version when syncing.
+    var updatedAt = Date()
+}
+
+extension Moment {
+    private enum CodingKeys: String, CodingKey {
+        case id, date, phase, trigger, feltLike, helped, notes, loggedBy, updatedAt
+    }
+
+    // Moments saved before sync existed have no loggedBy/updatedAt.
+    init(from decoder: Decoder) throws {
+        let c = try decoder.container(keyedBy: CodingKeys.self)
+        id = try c.decode(UUID.self, forKey: .id)
+        date = try c.decode(Date.self, forKey: .date)
+        phase = try c.decode(Phase.self, forKey: .phase)
+        trigger = try c.decodeIfPresent(String.self, forKey: .trigger) ?? ""
+        feltLike = try c.decodeIfPresent(String.self, forKey: .feltLike) ?? ""
+        helped = try c.decodeIfPresent(String.self, forKey: .helped) ?? ""
+        notes = try c.decodeIfPresent(String.self, forKey: .notes) ?? ""
+        loggedBy = try c.decodeIfPresent(String.self, forKey: .loggedBy) ?? ""
+        updatedAt = try c.decodeIfPresent(Date.self, forKey: .updatedAt) ?? date
+    }
 }
 
 struct TriggerCount: Identifiable, Equatable {
@@ -54,20 +78,46 @@ final class Store {
     private static let profileKey = "steady.profile.v1"
     private static let momentsKey = "steady.moments.v1"
     private static let onboardedKey = "steady.onboarded.v1"
+    private static let stampsKey = "steady.profileStamps.v1"
+    private static let deletedKey = "steady.deletedMoments.v1"
+    private static let deviceKey = "steady.device.v1"
 
     private let defaults: UserDefaults
+    /// True while a synced change is applied, so it doesn't get a fresh timestamp.
+    private var applyingSync = false
 
-    var profile: Profile { didSet { save(profile, key: Self.profileKey) } }
+    var profile: Profile {
+        didSet {
+            save(profile, key: Self.profileKey)
+            guard !applyingSync else { return }
+            let now = Date()
+            for field in ProfileField.allCases where field.differs(oldValue, profile) {
+                profileStamps[field] = now
+            }
+        }
+    }
     var moments: [Moment] { didSet { save(moments, key: Self.momentsKey) } }
     var hasOnboarded: Bool { didSet { defaults.set(hasOnboarded, forKey: Self.onboardedKey) } }
+    private(set) var profileStamps: [ProfileField: Date] { didSet { save(profileStamps, key: Self.stampsKey) } }
+    private(set) var deletedMoments: [UUID: Date] { didSet { save(deletedMoments, key: Self.deletedKey) } }
+    var device: DeviceSettings { didSet { save(device, key: Self.deviceKey) } }
 
     var names: Names { profile.names }
+
+    /// The name of whoever owns this phone, if they've said.
+    var ownerName: String? { device.owner?.name(in: names) }
+
+    /// The other person: who this phone syncs with.
+    var otherName: String { device.owner == .partner ? names.me : names.partner }
 
     init(defaults: UserDefaults = .standard) {
         self.defaults = defaults
         profile = Self.load(Profile.self, key: Self.profileKey, from: defaults) ?? Profile()
         moments = Self.load([Moment].self, key: Self.momentsKey, from: defaults) ?? []
         hasOnboarded = defaults.bool(forKey: Self.onboardedKey)
+        profileStamps = Self.load([ProfileField: Date].self, key: Self.stampsKey, from: defaults) ?? [:]
+        deletedMoments = Self.load([UUID: Date].self, key: Self.deletedKey, from: defaults) ?? [:]
+        device = Self.load(DeviceSettings.self, key: Self.deviceKey, from: defaults) ?? DeviceSettings()
     }
 
     func add(_ moment: Moment) {
@@ -75,14 +125,42 @@ final class Store {
         moments.sort { $0.date > $1.date }
     }
 
+    /// Saves a new or edited moment, stamping who logged it and when.
     func update(_ moment: Moment) {
+        var moment = moment
+        moment.updatedAt = Date()
+        if moment.loggedBy.isEmpty, let ownerName { moment.loggedBy = ownerName }
         guard let index = moments.firstIndex(where: { $0.id == moment.id }) else { return add(moment) }
         moments[index] = moment
         moments.sort { $0.date > $1.date }
     }
 
     func deleteMoments(at offsets: IndexSet) {
+        let now = Date()
+        for index in offsets { deletedMoments[moments[index].id] = now }
         moments = moments.enumerated().filter { !offsets.contains($0.offset) }.map(\.element)
+    }
+
+    // MARK: Sync
+
+    /// Everything this phone shares with the paired phone.
+    var syncPayload: SyncPayload {
+        SyncPayload(senderName: ownerName ?? "", profile: profile, profileStamps: profileStamps,
+                    moments: moments, deletedMoments: deletedMoments)
+    }
+
+    /// Merges the other phone's data in and returns what changed.
+    @discardableResult
+    func applySync(from remote: SyncPayload) -> SyncResult {
+        let result = SyncMerge.merge(local: syncPayload, remote: remote)
+        applyingSync = true
+        defer { applyingSync = false }
+        if result.payload.profile != profile { profile = result.payload.profile }
+        if result.payload.moments != moments { moments = result.payload.moments }
+        profileStamps = result.payload.profileStamps
+        deletedMoments = result.payload.deletedMoments
+        device.lastSync = Date()
+        return result
     }
 
     /// The triggers mentioned most often in the log — a simple pattern spotter.
@@ -154,9 +232,9 @@ extension Store {
         store.hasOnboarded = true
         let day: TimeInterval = 86_400
         store.moments = [
-            Moment(date: Date().addingTimeInterval(-1 * day), phase: .wobble, trigger: "Short text reply", feltLike: "Alarm bells", helped: "A quick “we're okay”"),
-            Moment(date: Date().addingTimeInterval(-4 * day), phase: .storm, trigger: "Feedback at work", feltLike: "Shame wave", helped: "Pause word, then a walk"),
-            Moment(date: Date().addingTimeInterval(-9 * day), phase: .wobble, trigger: "Short text reply", feltLike: "Replaying it", helped: "Asked directly")
+            Moment(date: Date().addingTimeInterval(-1 * day), phase: .wobble, trigger: "Short text reply", feltLike: "Alarm bells", helped: "A quick “we're okay”", loggedBy: "Sam"),
+            Moment(date: Date().addingTimeInterval(-4 * day), phase: .storm, trigger: "Feedback at work", feltLike: "Shame wave", helped: "Pause word, then a walk", loggedBy: "Alex"),
+            Moment(date: Date().addingTimeInterval(-9 * day), phase: .wobble, trigger: "Short text reply", feltLike: "Replaying it", helped: "Asked directly", loggedBy: "Alex")
         ]
         return store
     }

@@ -33,6 +33,11 @@ struct UsView: View {
                     } label: {
                         LabeledContent("Moments log", value: "\(store.moments.count)")
                     }
+                    NavigationLink {
+                        SyncView()
+                    } label: {
+                        Label("Sync with \(store.otherName)", systemImage: "arrow.triangle.2.circlepath")
+                    }
                     ForEach(store.commonTriggers) { item in
                         Label("“\(item.text)” — \(item.count) times", systemImage: "chart.bar.fill")
                             .font(.subheadline)
@@ -41,7 +46,7 @@ struct UsView: View {
                 } header: {
                     Text("Spotting patterns")
                 } footer: {
-                    P("Logging RSD moments — even briefly — makes patterns easier to see for both of you. Everything stays on this phone.")
+                    P("Logging RSD moments — even briefly — makes patterns easier to see for both of you. Sync shares them between your two phones directly, with nothing sent online.")
                 }
             }
             .navigationTitle("\(store.names.me) & \(store.names.partner)")
@@ -155,6 +160,11 @@ struct MomentsView: View {
                         if !moment.helped.isEmpty {
                             Text("Helped: \(moment.helped)")
                                 .font(.subheadline)
+                                .foregroundStyle(.secondary)
+                        }
+                        if !moment.loggedBy.isEmpty {
+                            Label("Logged by \(moment.loggedBy)", systemImage: "person.crop.circle")
+                                .font(.caption)
                                 .foregroundStyle(.secondary)
                         }
                     }
